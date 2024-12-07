@@ -51,6 +51,9 @@
 .w-60{
     width: 60%;
 }
+.w-80{
+    width: 80%;
+}
 .h-200{
     height: 200px;
 }
@@ -135,6 +138,12 @@
     background-color: black;
     opacity: 0.8;
 }
+.bg-overlay2{
+    width: 100%;
+    height: 500px;
+    background-color: black;
+    opacity: 0.8;
+}
 .img1{
     background-image: url(https://th.bing.com/th/id/OIP.gwSqUsBoUqwQJ4k6udVqZgHaFE?rs=1&pid=ImgDetMain);
 }
@@ -152,6 +161,9 @@
 }
 .img6{
     background-image: url(https://th.bing.com/th/id/R.b771160f9ef2c50ec2998f53005bae2e?rik=2ATxrGT01puiQw&riu=http%3a%2f%2f1.bp.blogspot.com%2f-FaeVhIRqeIc%2fVX7r6rp2ViI%2fAAAAAAAAQv4%2fE0Gc-YY3Btg%2fs1600%2fTechnology-Wallpapers-2.jpg&ehk=9ZpnTbwNG18dafyfkZyMFnAH9lUTHvCbRc57p1qAYm0%3d&risl=&pid=ImgRaw&r=0);
+}
+.bg-img{
+    background-image: url(https://shopsphere.co/wp-content/uploads/2024/07/web-1.png);
 }
 
     </style>
@@ -313,37 +325,64 @@
     </div>
       
 
+                                                        <!-- Image section  -->
+
+<div class=" d-flex flex-column justify-content-center align-items-center h-600 w-100 my-5 gap-3">
+    <div class="d-flex justify-content-center align-items-center flex-column w-80 text-justify">
+        <h2 class="w-80 text-center">"Driving Innovative Marketing Solutions for You"</h2>
+        <p class="w-80">"Our software house excels in delivering cutting-edge marketing solut elevate your brand and measurable results. We combine innovation with expertise to drive engagement and growth. Trust us to transform your vision into success, ensuring your business stands out in today's competitive digital landscape."</p>
+    </div>
+    <div class="h-500 w-80 overflow-hidden rounded bg-transparent box-shadow1 hover-box">
+        <img src="https://shopsphere.co/wp-content/uploads/2024/07/1-1.png" alt="graphic" style="height: 500px; width: 100%;" class="box-shadow1">
+    </div>
+</div>
+
     
+
+                                                <!-- Fixed background image section  -->
+
+<div class="h-500 w-100 imgs bg-img">
+    <div class="bg-overlay2">
+        <div class="d-flex flex-column justify-content-center align-items-center p-5 w-50 h-100 lh-5 gap-3">
+            <h2 class="text-light">"Excellence Through Efficiency"</h2>
+            <p class="text-light text-align">"Our software house is built on a foundation of efficiency and excellence. We deliver high-quality work with precision, ensuring every project is completed on time and beyond expectations. By leveraging advanced tools and streamlined processes, we maximize productivity, minimize delays, and provide exceptional results that drive your business forward with confidence. Our software house is built on a foundation of efficiency and excellence. We deliver high-quality work with precision, ensuring every project is completed on time and beyond expectations. By leveraging advanced tools and streamlined processes, we maximize productivity, minimize delays, and provide exceptional results that drive your business forward with confidence."</p>
+            <a href="/contact.html" class="text-decoration-none text-info border border-1 border-info py-1 px-3 rounded1">Contact Us</a>
+        </div>
+    </div>
+    
+</div>
+
+
                                                 <!-- Last section to add contact shortcut  -->
 
-<div class="container h-600 d-flex justify-content-center align-items-center">
-    <div class="d-flex w-50 h-100">
-        <form action="submit" class="w-100 h-100 d-flex flex-column justify-content-center ps-5 gap-3">
+<div class="container h-600 d-flex justify-content-evenly align-items-center bg-light hover-box box-shadow1 rounded border border-2 border-dark my-5">
+    <div class="d-flex w-40 h-500 bg-primary text-light rounded1 box-shadow1">
+        <form action="submit" class="w-100 h-100 d-flex flex-column justify-content-center ps-5 gap-2">
             <h2 class="h6 fs-1">Get in Touch with Us!</h2>
             <label for="text">Your Name</label>
-            <input type="text" class="border-bottom border-end border-0 border-dark bg-transparent w-60">
+            <input type="text" class="border-bottom border-end border-0 border-light bg-transparent w-80">
             <label for="email">Your Email</label>
-            <input type="email" class="border-bottom border-end border-0 border-dark bg-transparent w-60">
+            <input type="email" class="border-bottom border-end border-0 border-light bg-transparent w-80">
             <label for="message">Your Message</label>
-            <textarea rows="6" cols="20" class="bg-transparent w-60"></textarea>
-            <a href="skylinewebstudio@gmail.com" class="text-decoration-none text-dark border border-1 border-dark mt-2 py-2 px-3 rounded1" style="width: 150px;">SEND MESSAGE</a>
+            <textarea rows="6" cols="20" class="bg-transparent w-80 border border-1 border-light"></textarea>
+            <a href="skylinewebstudio@gmail.com" class="text-decoration-none text-light border border-1 border-light mt-2 py-2 px-3 rounded1" style="width: 150px;">SEND MESSAGE</a>
         </form>
     </div>
-    <div class="w-50 h-100 ps-5 pt-5">
+    <div class="w-40 h-500 ps-5 pt-4">
         <form action="info" class="">
             <h2 class="h6 fs-1">Our Bussiness Hours!</h2>
             <ul>
                 <li class="py-3">Monday: 09:00 AM ___ 04:00PM</li>
-                <li class="pb-3">Friday: 08:00AM ___ 12:30PM</li>
-                <li class="pb-3">Monday: 10:00AM ___ 02:00PM</li>
+                <li class="pb-3">Friday: 08:00 AM ___ 12:30PM</li>
+                <li class="pb-3">Monday: 10:00 AM ___ 02:00PM</li>
                 <li>Sunday: Off (Contact us, Our team will reply ASAP)</li>
             </ul>
         </form>
-        <ul class="pt-5">
-            <li class="py-3 fs-5"><i class="fa-brands fa-facebook text-primary fs-4"></i> Facebook</li>
-            <li class="pb-3 fs-5"><i class="fa-brands fa-square-whatsapp text-success fs-4"></i> Whatsapp</li>
-            <li class="pb-3 fs-5"><i class="fa-brands fa-square-instagram text-danger fs-4"></i> Instagram</li>
-            <li class="fs-5"><i class="fa-brands fa-twitter text-primary fs-4"></i> Twitter</li>
+        <ul class="pt-3">
+            <li class="py-3 fs-5"><i class="fa-brands fa-facebook text-primary fs-4 pe-3"></i> Facebook</li>
+            <li class="pb-3 fs-5"><i class="fa-brands fa-square-whatsapp text-success fs-4 pe-3"></i> Whatsapp</li>
+            <li class="pb-3 fs-5"><i class="fa-brands fa-square-instagram text-danger fs-4 pe-3"></i> Instagram</li>
+            <li class="fs-5"><i class="fa-brands fa-twitter text-primary fs-4 pe-3"></i> Twitter</li>
         </ul>
     </div>
 </div>
