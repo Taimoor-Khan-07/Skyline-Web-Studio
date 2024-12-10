@@ -1,0 +1,117 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  #page1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  .form-section, .information-sec {
+    flex: 1 1 45%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form Styles */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  button.btn1 {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button.btn1:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Information Section */
+  .information-sec h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+  
+  .paragraph {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .map-container {
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+  }
+  
+  .map-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  .map {
+    width: 100%;
+    max-width: 600px; /* Ensures the map doesn’t get too wide on large screens */
+    height: 400px;
+    border: 1px solid #ccc; /* Optional: Adds a subtle border */
+    border-radius: 8px; /* Adds rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visual appearance */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .map {
+        height: 300px; /* Adjust height for smaller screens */
+    }
+  
+    .map-container {
+        margin: 10px;
+        padding: 5px;
+    }
+  
+    .map-container h2 {
+        font-size: 20px;
+    }
+  }
+  
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    #page1 {
+        flex-direction: column;
+    }
+  
+    .form-section, .information-sec {
+        flex: 1 1 100%;
+    }
+  }
+  
