@@ -7,12 +7,174 @@
     <script src="https://kit.fontawesome.com/bd9fd7b14d.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
-        
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0px 10px;
+        padding: 0;
+        line-height: 1.6;
+        background-color: #23c4e44b;
+    }
+    header {
+        background: #000000;
+        text-align: center;
+        padding: 40px;
+        color: aliceblue;
+        background-image: url("/sws-logo-sws-letter-sws-letter-logo-design-initials-sws-logo-linked-with-circle-and-uppercase-monogram-[1].png");
+        background-repeat:no-repeat;
+        background-position: center;
+        background-size: contain;
+        margin:0px 0px 10px 0px;
+        font-family: 'Georgia', serif;
+        animation: moveBackground 10s linear infinite;
+    }
+    @keyframes moveBackground {
+        from {
+            background-position: 0 0;
+        }
+        to {
+            background-position: 100% 0;
+        }
+    }
+    header h1 {
+        font-size: 2.5rem;
+        color: gold;
+    }
+    header p {
+        margin: 10px 0;
+        font-size: 1.2rem;
+    }
+    section{
+        font-family: 'Georgia', serif;
+    }
+    .sub-hero{
+        max-height:600px ;
+        background-image: url("https://shopsphere.co/wp-content/uploads/2024/07/web-1.png");
+        background-position: center;
+        width:100%;
+        border-radius: 15px;
+        padding: 20px;
+        margin-bottom: 10px;
+        color: yellow;
+    }
+    .history h2{
+        text-align: center;
+    }
+    .dealing ,.testimonials{
+        display: flex;
+        color: black;
+        line-height: 35px;
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF2hiYk5A-mRrj_Vnz9-yiOXLJ1JQwGU00gw&s");
+    }
+    .dealing div ,.dealing img,.Customers-Say,.testimonials img{
+        width: 50%;
+        height:auto;
+    }
+    .dealing div,.Customers-Say{
+        background-color: aliceblue;
+        border-radius: 15px;
+        margin: 30px;
+        padding: 20px;
+
+    }
+    .carousel{
+        margin: 10px;
+        color: black;
+        background-color: aliceblue;
+        padding:20px ;
+    }
+    @media(max-width:769px){
+        .dealing div ,.dealing img,.testimonials img{
+            width: 100%;
+        }
+        .dealing ,.testimonials {
+            flex-wrap: wrap;
+        }
+        .testimonials{
+            flex-direction: column-reverse;
+        }
+        .Customers-Say{
+            width:90%;
+            line-height: 24px;
+        } 
+    }
+    @media(max-width:426px){
+        header{
+            animation-duration: 2s;
+        }
+        header h1 {
+            font-size: 1.5rem;
+        }
+        .sub-hero{
+            background-image: url("/history2{.png")
+        }
+        .dealing img{
+            height: 400px;
+        }
+    }
     </style>
 </head>
 <body>
                     <!-- Div for placement of navbar  -->
     <div id="navbar"></div>
+    <header>
+        <h1>Skyline Web Studio</h1>
+        <p>"Discover Our History And Visions" </p>
+    </header>
+    
+    <section class="sub-hero">
+        <div>
+            <h2>Our History</h2>
+            <div class="timeline">
+                <div>
+                    <h3>2015</h3>
+                    <p>We started our journey with a vision to bring innovation to the industry.</p>
+                </div>
+                <div>
+                    <h3>2018</h3>
+                    <p>Expanded to multiple locations and gained recognition for quality service.</p>
+                </div>
+                <div>
+                    <h3>2023</h3>
+                    <p>Achieved a major milestone by serving over 10,000 satisfied customers.</p>
+                </div>
+            </div>
+            <button type="button" class="btn btn-outline-info">More Info</button>
+        </div>
+    </section>
+    <section class="dealing">
+        <div>
+            <h2>What We Do</h2>
+            <p>We deal with our customers by understanding their needs and providing tailored solutions. Here's a simple process:</p>
+            <ol>
+                <li>Contact us with your requirements.</li>
+                <li>We analyze and suggest the best solution.</li>
+                <li>Deliver quality results and ensure satisfaction.</li>
+                <li>We specialize in creating solutions that are practical and effective.</li>
+                <li>Our goal is to build long-term relationships by exceeding expectations.</li>
+                <li>We ensure transparency in every step to maintain customer trust.</li>
+                <li>Your success is our priority, and we work tirelessly to achieve it.</li>
+            </ol>
+           <button type="button" class="btn btn-outline-info">More Info</button>
+        </div>
+        <img src="https://shopsphere.co/wp-content/uploads/2023/06/pexels-teona-swift-6912829-1024x948.jpg " alt="">
+    </section>
+       <section class="testimonials">
+        <img src="https://shopsphere.co/wp-content/uploads/2023/05/pexels-ivan-samkov-8117438.jpg " alt="">
+        <div class="Customers-Say">
+        <h2>What Our Customers Say !</h2>
+          <li>"Their service was outstanding! I couldn't have asked for better support."</li>
+        <p>- Arsalan</p></li>
+          <li>"Highly professional and reliable. They truly care about their customers."</li>
+        <p>- Abdullah</p>
+          <li>"Outstanding quality and prompt delivery! I'll definitely return for future projects."</li>
+        <p>- Umer</p>
+          <li>"Their approach was efficient, and the results were nothing short of amazing."</li>
+        <p>- Ali </p>
+          <li>"Highly reliable and professional—one of the best experiences I’ve ever had!"</li>
+        <p>- Muhammad</p>
+        <button type="button" class="btn btn-outline-info">More Info</button>
+    </div>
+    </section>
 
 
 
