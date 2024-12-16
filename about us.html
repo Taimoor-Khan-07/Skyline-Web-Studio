@@ -7,12 +7,240 @@
     <script src="https://kit.fontawesome.com/bd9fd7b14d.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
-        
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0px 10px;
+        padding: 0;
+        line-height: 1.6;
+        background-color: #23c4e44b;
+    }
+    header {
+        background: #000000;
+        text-align: center;
+        padding: 40px;
+        color: aliceblue;
+        background-image: url("/sws-logo-sws-letter-sws-letter-logo-design-initials-sws-logo-linked-with-circle-and-uppercase-monogram-[1].png");
+        background-repeat:no-repeat;
+        background-position: center;
+        background-size: contain;
+        margin:0px 0px 10px 0px;
+        font-family: 'Georgia', serif;
+        animation: moveBackground 10s linear infinite;
+    }
+    @keyframes moveBackground {
+        from {
+            background-position: 0 0;
+        }
+        to {
+            background-position: 100% 0;
+        }
+    }
+    header h1 {
+        font-size: 2.5rem;
+        color: gold;
+    }
+    header p {
+        margin: 10px 0;
+        font-size: 1.2rem;
+    }
+    section{
+        font-family: 'Georgia', serif;
+    }
+    .sub-hero{
+        max-height:600px ;
+        background-image: url("https://shopsphere.co/wp-content/uploads/2024/07/web-1.png");
+        background-position: center;
+        width:100%;
+        border-radius: 15px;
+        padding: 20px;
+        margin-bottom: 10px;
+        color: yellow;
+    }
+    .history h2{
+        text-align: center;
+    }
+    .dealing {
+          line-height: 35px;
+        }
+        .testimonials{
+        line-height: 23px;
+        }
+    .dealing ,.testimonials{
+        display: flex;
+        color: black;
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF2hiYk5A-mRrj_Vnz9-yiOXLJ1JQwGU00gw&s");
+    }
+    .dealing div ,.dealing img,.Customers-Say,.testimonials img{
+        width: 50%;
+        height:auto;
+    }
+    .dealing div,.Customers-Say{
+        background-color: aliceblue;
+        border-radius: 15px;
+        margin: 30px;
+        padding: 20px;
+
+    }
+    .carousel{
+        margin: 10px;
+        color: black;
+        background-color: aliceblue;
+        padding:20px ;
+    }
+    @media(max-width:769px){
+        .dealing div ,.dealing img,.testimonials img{
+            width: 100%;
+        }
+        .dealing ,.testimonials {
+            flex-wrap: wrap;
+        }
+        .testimonials{
+            flex-direction: column-reverse;
+        }
+        .Customers-Say{
+            width:90%;
+            line-height: 24px;
+        } 
+    }
+    @media(max-width:426px){
+        header{
+            animation-duration: 2s;
+        }
+        header h1 {
+            font-size: 1.5rem;
+        }
+        .sub-hero{
+            background-image: url("/history.png")
+        }
+        .carousel-item .d-flex {
+                flex-direction: column;
+            }
+        .dealing img{
+            height: 400px;
+        }
+    }
     </style>
 </head>
 <body>
                     <!-- Div for placement of navbar  -->
     <div id="navbar"></div>
+    <header>
+        <h1>Skyline Web Studio</h1>
+        <p>"Discover Our History And Visions" </p>
+    </header>
+    
+    <section class="sub-hero">
+        <div>
+            <h2>Our History</h2>
+            <div class="timeline">
+                <div>
+                    <h3>2015</h3>
+                    <p>We started our journey with a vision to bring innovation to the industry.</p>
+                </div>
+                <div>
+                    <h3>2018</h3>
+                    <p>Expanded to multiple locations and gained recognition for quality service.</p>
+                </div>
+                <div>
+                    <h3>2023</h3>
+                    <p>Achieved a major milestone by serving over 10,000 satisfied customers.</p>
+                </div>
+            </div>
+            <button type="button" class="btn btn-outline-info">More Info</button>
+        </div>
+    </section>
+    <div id="carouselExampleControls" class="carousel-inner my-4" data-bs-ride="carousel">
+        <!-- First Item -->
+        <div class="carousel-item active text-center">
+          <div class="d-flex justify-content-center align-items-center gap-3">
+            <div class="text-white rounded">
+              <img width="200px" height="200px" src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dGVjaG5vbG9neXxlbnwwfHwwfHx8MA%3D%3D" class="img-fluid rounded" alt="Left Icon">
+            </div>
+            <div class="text-box w-75 text-white  bg-dark px-3 py-5 rounded ">
+              <h2>"Building Reliable Backend Solutions"</h2>
+              <p>
+                At our core, we specialize in developing backend solutions that ensure reliability and efficiency for your digital platforms. Our systems are built to handle high loads, ensuring uninterrupted performance even during peak usage. By leveraging modern server-side technologies and secure database architectures, we provide seamless data management and rapid response times. We excel in API integrations, enabling smooth communication between different systems and applications. Scalability is a priority, ensuring your platform grows effortlessly as your business expands. Security is built into every layer, protecting sensitive data and ensuring compliance. With a focus on innovation, our backend solutions empower businesses to deliver exceptional user experiences. Let us build the foundation for your success with dependable and future-ready technology.
+              </p>
+              <button type="button" class="btn btn-info">More Info</button>
+            </div>
+            <div class=" text-white rounded">
+              <img width="200px" height="200px" src="https://plus.unsplash.com/premium_photo-1661963212517-830bbb7d76fc?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dGVjaG5vbG9neXxlbnwwfHwwfHx8MA%3D%3D" class="img-fluid rounded" alt="Right Icon">
+            </div>
+          </div>
+        </div>
+      
+        <!-- Second Item -->
+        <div class="carousel-item text-center">
+          <div class="d-flex justify-content-center align-items-center gap-3">
+            <div class=" text-white rounded">
+              <img width="200px" height="200px" src="https://plus.unsplash.com/premium_photo-1661963874418-df1110ee39c1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHRlY2hub2xvZ3l8ZW58MHx8MHx8fDA%3D" class="img-fluid rounded" alt="Left Icon">
+            </div>
+            <div class="text-box w-75 text-white  bg-dark px-3 py-5 rounded">
+              <h2>"Crafting Stunning Fronted Experience"</h2>
+              <p>
+                We focus on creating visually appealing, user-friendly, and responsive interfaces that leave a lasting impression. Our team of expert designers and developers work together to craft seamless, intuitive, and engaging digital experiences. By combining creativity with the latest design trends and technologies, we ensure that every element of the frontend is both functional and aesthetically pleasing. We prioritize user experience (UX) to make navigation simple and enjoyable, while also ensuring accessibility across all devices. Our goal is to bring your vision to life with a frontend that enhances brand identity and maximizes user engagement. With a focus on performance and speed, we create interfaces that are not only beautiful but also fast and reliable
+              </p>
+              <button type="button" class="btn btn-info">More Info</button>
+            </div>
+            <div class=" text-white rounded">
+              <img width="200px" height="200px" src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzV8fHRlY2hub2xvZ3l8ZW58MHx8MHx8fDA%3D" class="img-fluid rounded" alt="Right Icon">
+            </div>
+          </div>
+        </div>
+      
+        <!-- Third Item -->
+        <div class="carousel-item text-center">
+          <div class="d-flex justify-content-center align-items-center gap-3">
+            <div class="text-white  rounded">
+              <img width="200px" height="200px" src="https://images.pexels.com/photos/919734/pexels-photo-919734.jpeg?auto=compress&cs=tinysrgb&w=600" class="img-fluid rounded" alt="Left Icon">
+            </div>
+            <div class="text-box w-75 text-white  bg-dark px-3 py-5 rounded">
+              <h2>"Seamless API Integration"</h2>
+              <p>
+                Our technology enables easy and smooth connectivity between your business's software applications. Our API integration process ensures a hassle-free and efficient experience for users, with no interruptions. Through this process, we automate your systems, eliminating manual tasks and boosting productivity. Your data and workflows synchronize seamlessly, reducing errors and delays. Our integration solutions offer flexibility and scalability to meet your evolving business needs. It helps save time and resources while also supporting better decision-making. Our integration solutions are designed to give your business a competitive edge, helping you stay ahead in the market.
+              </p>
+              <button type="button" class="btn btn-info">More Info</button>
+            </div>
+            <div class=" text-white rounded">
+              <img width="200px" height="200px" src="data:image/jpeg;base64,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" class="img-fluid rounded" alt="Right Icon">
+            </div>
+          </div>
+        </div>
+    </div>
+    <section class="dealing">
+        <div>
+            <h2>What We Do</h2>
+            <p>We deal with our customers by understanding their needs and providing tailored solutions. Here's a simple process:</p>
+            <ol>
+                <li>Contact us with your requirements.</li>
+                <li>We analyze and suggest the best solution.</li>
+                <li>Deliver quality results and ensure satisfaction.</li>
+                <li>We specialize in creating solutions that are practical and effective.</li>
+                <li>Our goal is to build long-term relationships by exceeding expectations.</li>
+                <li>We ensure transparency in every step to maintain customer trust.</li>
+                <li>Your success is our priority, and we work tirelessly to achieve it.</li>
+            </ol>
+           <button type="button" class="btn btn-outline-info">More Info</button>
+        </div>
+        <img src="https://shopsphere.co/wp-content/uploads/2023/06/pexels-teona-swift-6912829-1024x948.jpg " alt="">
+    </section>
+       <section class="testimonials">
+        <img src="https://shopsphere.co/wp-content/uploads/2023/05/pexels-ivan-samkov-8117438.jpg " alt="">
+        <div class="Customers-Say">
+        <h2>What Our Customers Say !</h2>
+          <li>"Their service was outstanding! I couldn't have asked for better support."</li>
+        <p>- Arsalan</p></li>
+          <li>"Highly professional and reliable. They truly care about their customers."</li>
+        <p>- Abdullah</p>
+          <li>"Outstanding quality and prompt delivery! I'll definitely return for future projects."</li>
+        <p>- Umer</p>
+          <li>"Their approach was efficient, and the results were nothing short of amazing."</li>
+        <p>- Ali </p>
+          <li>"Highly reliable and professional—one of the best experiences I’ve ever had!"</li>
+        <p>- Muhammad</p>
+        <button type="button" class="btn btn-outline-info">More Info</button>
+    </div>
+    </section>
 
 
 
