@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* background-color: #6F18E1; */
+    box-sizing: border-box;
+    font-family: Arial,sans-serif;
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom right, #8e2de2, #4a00e0);
+    color: #333;
+}
+container {
+    width: 90%;
+    max-width: 400px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 30px 20px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+ h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: black;
+    /* background-color: white; */
+    display: flex;
+    border: none;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.input {
+    margin-bottom: 15px;
+    text-align: left;
+    
+}
+
+.input label {
+    font-size: 0.9rem;
+    /* color: #777; */
+    color: #ddd;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.input input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    /* background-color: white; */
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    transition: border 0.3s ease;
+}
+.input input:focus {
+    border: 1px solid #8e2de2;
+}
+.btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    background: white;
+    color:#8e2de2;
+    border:none;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius : 5px;
+    cursor:pointer;
+    transition:background 0.3s ease, transform 0.2s ease;
+}
+
+.btn :hover {
+    background: linear-gradient(to left, #8e2de2, #4a00e0);
+    transform: scale(1.05);
+}
+
+/* Divider */
+.or-divider {
+    margin: 20px 0;
+    font-size: 0.85rem;
+    color: white;
+}
+
+.Login  {
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.Login a {
+    text-decoration: none;
+    color: #8e2de2;
+    /* background-color: white; */
+    font-weight: bold;
+}
+.Login a:hover {
+    color: #4a00e0;
+}
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 20px 15px;
+    }
+
+    .signUp-page h1 {
+        font-size: 1.8rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+    }
+}
