@@ -165,11 +165,14 @@
 .bg-img{
     background-image: url(https://shopsphere.co/wp-content/uploads/2024/07/web-1.png);
 }
+.bg-body{
+    background-color: blue;
+}
 
 
     </style>
 </head>
-<body>
+<body class="bg-info">
                     <!-- Div for placement of navbar  -->
     <div id="navbar"></div>
 
@@ -387,10 +390,20 @@
         </ul>
     </div>
 </div>
+<div id="footer"></div>
+<script>
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading footer:', error));
+  </script>
+  
 
-<div id="footer">
+<!-- <div id="footer">
     <iframe src="footer.html" style="width: 100%; height: 260px;"></iframe>
-</div>
+</div> -->
 
 
 
