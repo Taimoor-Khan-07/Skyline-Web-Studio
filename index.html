@@ -7,24 +7,408 @@
     <script src="https://kit.fontawesome.com/bd9fd7b14d.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
-        
+        .video-container {
+            width: 100%;
+            height: 600px;
+            overflow: hidden;
+            position: relative;
+        }
+        .video-container video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+      .overlay {
+        position: absolute;
+        display: flex;
+        flex-direction: row-reverse;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.65);
+        z-index: 1000;
+  }
+  .lh-8{
+    line-height: 60px;
+  }
+  .h6 {
+    font-family: 'Playfair Display', serif;
+}
+.fs-8{
+    font-size: 40px;
+}
+.rounded1{
+    border-radius: 60px;
+}
+.w-40{
+    width: 40%;
+}
+.w-60{
+    width: 60%;
+}
+.w-80{
+    width: 80%;
+}
+.h-200{
+    height: 200px;
+}
+.h-500{
+    height: 500px;
+}
+.h-600{
+    height: 600px;
+}
+.me-6{
+    margin-right: 450px;
+}
+.mt-200{
+    margin-top: 200px;
+}
+.box-shadow{
+    box-shadow: 1px 1px 5px blue;
+    box-shadow: 15px 15px 25px blue;
+}
+.hover-container:hover{
+    transform: scale(1.2);
+    transition: all 0.5s ease-out;
+    color: rgb(56, 186, 247) !important;
+}
+.hover-container{
+    animation: in-animation 5s ease-in-out 0s 1 normal;
+}
+.hover-box:hover{
+    background-color: transparent !important;
+    box-shadow: 15px 15px 20px blue;
+}
+.text-justify{
+    font-size: 18px;
+    text-align: justify;
+}
+.box-shadow1{
+    box-shadow: 15px 15px 20px rgb(0, 0, 0);
+}
+@keyframes in-animation{
+    0%{
+        transform: translateY(-100px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+
+.carousel-container img {
+  transition: transform 2s ease-in-out, opacity 4s ease;
+}
+
+.small-div {
+  width: 300px;
+  height: 250px;
+  opacity: 1;
+  transform: scale(0.8);
+  border-radius: 12px;
+}
+
+.large-div {
+  width: 800px;
+  height: 396px;
+  opacity: 1;
+  transform: scale(1);
+  border-radius: 12px;
+}
+.imgs{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-overlay{
+    width: 800px;
+    height: 396px;
+    background-color: black;
+    opacity: 0.8;
+}
+.bg-overlay2{
+    width: 100%;
+    height: 500px;
+    background-color: black;
+    opacity: 0.8;
+}
+.img1{
+    background-image: url(https://th.bing.com/th/id/OIP.gwSqUsBoUqwQJ4k6udVqZgHaFE?rs=1&pid=ImgDetMain);
+}
+.img2{
+    background-image: url(https://assets.thehansindia.com/h-upload/2021/07/31/1600x960_1092805-tech.jpg);
+}
+.img3{
+    background-image: url(https://img.freepik.com/premium-vector/digital-transformation-concept-digitization-business-processes-modern-technology-disruption_127544-3232.jpg);
+}
+.img4{
+    background-image: url(https://th.bing.com/th/id/OIP.RW_9fj_eehgD69MJbn4AKgHaEK?rs=1&pid=ImgDetMain);
+}
+.img5{
+    background-image: url(https://wallpapercave.com/wp/wp9153584.png);
+}
+.img6{
+    background-image: url(https://th.bing.com/th/id/R.b771160f9ef2c50ec2998f53005bae2e?rik=2ATxrGT01puiQw&riu=http%3a%2f%2f1.bp.blogspot.com%2f-FaeVhIRqeIc%2fVX7r6rp2ViI%2fAAAAAAAAQv4%2fE0Gc-YY3Btg%2fs1600%2fTechnology-Wallpapers-2.jpg&ehk=9ZpnTbwNG18dafyfkZyMFnAH9lUTHvCbRc57p1qAYm0%3d&risl=&pid=ImgRaw&r=0);
+}
+.bg-img{
+    background-image: url(https://shopsphere.co/wp-content/uploads/2024/07/web-1.png);
+}
+.bg-body{
+    background-color: blue;
+}
+
+
     </style>
 </head>
-<body>
+<body class="bg-info">
                     <!-- Div for placement of navbar  -->
     <div id="navbar"></div>
 
                                     <!-- Hero Section work  -->
+    <div class="container-fluid p-0">
+        <div class="video-container">
+            <div class="overlay">
+                <div class="d-flex flex-column justify-content-center align-items-center box-shadow w-40 h-200 mt-200 bg-dark gap-2 rounded me-5 px-5 border border-1 border-info">
+                    <h2 class="text-light">What We Do!</h2>
+                    <p class="text-light">
+                        "Transform your online presence with our expert services in frontend and backend development, stunning web design, SEO optimization, custom web applications, e-commerce solutions, and robust web security. We build powerful, user-friendly websites that drive results."</p>
+                </div>
+                <div class="d-flex justify-content-center align-items-center h-100 w-60 flex-column">
+                    <h2 class="in-animation hover-container text-light lh-8 fs-8">"Empowering Solutions<br>Crafting, Developing, and also<br> Designing Exceptional Websites"</h2>
+                    <a href="/services.html" class="hover-container text-decoration-none text-info border border-1 border-info py-2 px-3 rounded1 mt-5 me-6">More About Us</a>
+                </div>
+            </div>
+            <video autoplay loop muted playsinline>
+                <source src="https://videos.pexels.com/video-files/3129671/3129671-uhd_2560_1440_30fps.mp4" 
+                type="video/mp4">
+            </video>
+        </div>
+    </div>
+  
+                                                
+                                                <!-- First Section Work starts from here  -->
+<div class="d-flex flex-column justify-content-center align-items-center mt-5">
+    <div class="w-60 h-100 border border-1 border-dark bg-light p-4 text-justify box-shadow1 rounded hover-box">
+        <h2>"Showcasing Our Core Skills and Service Offerings"</h2>
+        <p>Take a look at our exceptional work level, recognized globally with prestigious outputs. These achievements reflect our commitment to innovation, excellence, and delivering unparalleled results in every project.Take a look at our exceptional work level, recognized globally with prestigious outputs. These achievements reflect our commitment to innovation, excellence, and delivering unparalleled results in every project.</p>
+    </div>
+</div>
+                                                <!-- carousel section  -->
+  <section class="my-5">
+    <div id="customCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="carousel-container h-500">
+            <div class="small-div imgs img1 box-shadow"></div>
+            <div class="large-div imgs img2">
+                <div class="bg-overlay d-flex flex-column justify-content-center align-items-center gap-3 text-justify p-5 rounded box-shadow1">
+                    <h2 class="text-light">"Crafting Stunning Frontend Experiences"</h2>
+                    <p class="text-light">At our software house, we specialize in crafting stunning and user-friendly frontend web experiences that captivate and elevate brands. With years of experience in the industry.<br><br>
 
-    <div class="d-flex flex-wrap h-100 justify-content-between container gap-3 mt-5">
-        <img src="https://th.bing.com/th/id/OIP.KJqipVilEV7Qs_EDQch6uwHaEo?w=1920&h=1200&rs=1&pid=ImgDetMain" alt="gallery" style="height: 500px; width: 535px;">
-        <img src="https://1.bp.blogspot.com/-uhu8waWExcQ/XQkpB24RmBI/AAAAAAAAuHQ/DwWGftzKgTwkC0XJ9NIa68t9ChMtEr9dwCLcBGAs/s640/njn4.jpg" alt="gallery" style="height: 500px; width: 535px;">
-        <img src="https://th.bing.com/th/id/OIP.dJaCjfZKNI-7IKRhW44exQHaEm?w=1500&h=933&rs=1&pid=ImgDetMain" alt="gallery" style="height: 500px; width: 535px;">
-        <img src="https://th.bing.com/th/id/OIP.Mzx69hXeBW1TW_HeESKHvAHaFQ?w=1024&h=728&rs=1&pid=ImgDetMain" alt="gallery" style="height: 500px; width: 535px;">
+                    We pride ourselves on delivering solutions tailored to whether you're looking for a sleek business website, an engaging e-commerce platform, or a dynamic user interface.
+                    
+                    Frontend development isn’t just about aesthetics; it’s about creating seamless.</p>
+                    <a href="/contact.html" class="text-decoration-none text-info border border-1 border-info py-1 px-3 rounded1">More info</a>
+                </div>
+            </div>
+            <div class="small-div imgs img3 box-shadow"></div>            
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="carousel-container h-500">
+            <div class="small-div imgs img2 box-shadow"></div>
+            <div class="large-div imgs img3">
+                <div class="bg-overlay d-flex flex-column justify-content-center align-items-center gap-3 text-justify p-5 rounded box-shadow1">
+                    <h2 class="text-light">"Building Reliable Backend Solutions"</h2>
+                    <p class="text-light">Our software house excels in building reliable and efficient backend solutions that power your digital platforms seamlessly. With expertise in server-side technologies, databases, and API integrations, we ensure your applications run smoothly and securely.<br><br> Our team focuses on creating robust, scalable systems tailored to meet your unique requirements.  
+
+                        We believe a strong backend is the foundation of any successful digital solution, enabling flawless functionality and a superior user experience.</p>
+                    <a href="/contact.html" class="text-decoration-none text-info border border-1 border-info py-1 px-3 rounded1">More info</a>
+                </div>
+            </div>
+            <div class="small-div imgs img4 box-shadow"></div>            
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-container h-500">
+            <div class="small-div imgs img3 box-shadow"></div>
+            <div class="large-div imgs img4">
+                <div class="bg-overlay d-flex flex-column justify-content-center align-items-center gap-3 text-justify p-5 rounded box-shadow1">
+                    <h2 class="text-light">"Creating Exceptional Web Designs"</h2>
+                    <p class="text-light">Our team specializes in creating exceptional web designs that leave a lasting impression. We focus on blending aesthetics with functionality, ensuring every design is visually stunning and user-friendly.<br><br>From sleek layouts to responsive interfaces, our designs are tailored to meet your brand’s identity and goals. Let us transform your ideas into captivating digital experiences that engage your audience and elevate your online presence.</p>
+                    <a href="/contact.html" class="text-decoration-none text-info border border-1 border-info py-1 px-3 rounded1">More info</a>
+                </div>
+            </div>
+            <div class="small-div imgs img5 box-shadow"></div>            
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-container h-500">
+            <div class="small-div imgs img4 box-shadow"></div>
+            <div class="large-div imgs img5">
+                <div class="bg-overlay d-flex flex-column justify-content-center align-items-center gap-3 text-justify p-5 rounded box-shadow1">
+                    <h2 class="text-light">"Empowering Your Online Storefront"</h2>
+                    <p class="text-light">We specialize in crafting e-commerce solutions that drive sales and enhance customer experience. From intuitive navigation to secure payment integrations, our designs ensure your online store is both functional and visually appealing.<br><br>Our team focuses on creating responsive, scalable platforms tailored to your business needs. Whether you’re starting fresh or revamping an existing store, we’re here to help you achieve success in the competitive world of e-commerce.
+
+                    </p>
+                    <a href="/contact.html" class="text-decoration-none text-info border border-1 border-info py-1 px-3 rounded1">More info</a>
+                </div>
+            </div>
+            <div class="small-div imgs img6 box-shadow"></div>            
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-container h-500">
+            <div class="small-div imgs img5 box-shadow"></div>
+            <div class="large-div imgs img6">
+                <div class="bg-overlay d-flex flex-column justify-content-center align-items-center gap-3 text-justify p-5 rounded box-shadow1">
+                    <h2 class="text-light">"Building Dynamic Web Applications"</h2>
+                    <p class="text-light">We excel in developing dynamic web applications that combine performance, scalability, and user-centric design. Our expert team leverages cutting-edge technologies to create custom solutions tailored to your business needs. Whether it's an interactive platform.<br><br> A management tool, or a feature-rich application, we ensure seamless functionality and a superior user experience. Partner with us to transform your ideas into powerful web applications that drive efficiency and deliver outstanding results.</p>
+                    <a href="/contact.html" class="text-decoration-none text-info border border-1 border-info py-1 px-3 rounded1">More info</a>
+                </div>
+            </div>
+            <div class="small-div imgs img1 box-shadow"></div>            
+          </div>
+        </div>
+
       </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#customCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#customCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    
+  </section>
+
+
+
+                                                <!-- Second Section Work starts from here  -->
+
+
+    <div class="d-flex w-100 flex-wrap h-500 bg-info">
+        <div class="d-flex w-50 overflow-hidden h-100">
+            <img src="https://www.wipro.com/content/dam/nexus/en/ai/ai-tile-image-wega.jpg" alt="image" style="height: 100%; width: 100%;">
+        </div>
+        <div class="d-flex px-5 pt-5 pb-3 ps-5 lh-8 h6 w-50 h-100">
+            <h2 class="border border-2 border-dark p-5 me-5 bg-light rounded box-shadow1 hover-box">Turning<br>Your Desires<br>into Reality with our<br>Expert and Trained Team<BR><BR><p class="fs-5 text-justify">"We bring your visions to life by turning your desires and requirements into reality. Our dedicated team listens closely to your needs, crafting tailored solutions that reflect your goals. From innovative, impactful, and successful digital experiences."</p></h2>
+        </div>
+    </div>
+    <div class="d-flex w-100 flex-column flex-wrap h-500 bg-info">
+        <div class="d-flex px-5 pt-5 pb-3 ps-5 lh-8 h6 w-50 h-100">
+            <h2 class="border border-2 border-dark p-5 me-2 bg-light rounded box-shadow1 hover-box">Growing Your<br> Business with SEO<br>and Stunning Designs<br><br>
+            <p class="fs-5 text-justify">"Boost your business growth with our expert SEO strategies and captivating designs, crafted to attract, engage, and convert your audience. Boost your business growth with our expert SEO strategies and captivating designs, crafted to attract, engage, and convert your audience."</p></h2>
+        </div>
+        <div class="d-flex w-50 overflow-hidden h-100">
+            <img src="https://www.wipro.com/content/dam/nexus/en/ai/ai-lady-new-image.jpg" alt="image" style="height: 100%; width: 100%;">
+        </div>
+    </div>
+    <div class="d-flex w-100 flex-wrap h-500 bg-info">
+        <div class="d-flex w-50 h-100">
+            <img src="https://www.wipro.com/content/dam/nexus/en/ai/images/inspeactai-tile-3.jpg" alt="image" style="height: 100%; width: 100%;">
+        </div>
+        <div class="d-flex px-5 pt-5 pb-3 ps-5 lh-8 h6 w-50 h-100">
+            <h2 class="border border-2 border-dark p-5 me-5 bg-light rounded box-shadow1 hover-box">Fast and,<br>Reliable Solutions,<br>Designed Just for Your Needs<br><br><p class="fs-5 text-justify">"Our experienced team is driven by an unmatched passion for excellence. With a deep commitment to delivering outstanding results, we bring creativity, expertise, and dedication to every project. Our high junoon for work ensures innovative solutions, attention to detail, and a relentless focus on exceeding client expectations every step of the way."</p></h2>
+        </div>
+    </div>
       
 
+                                                        <!-- Image section  -->
+
+<div class=" d-flex flex-column justify-content-center align-items-center h-600 w-100 my-5 gap-3">
+    <div class="d-flex justify-content-center align-items-center flex-column w-80 text-justify">
+        <h2 class="w-80 text-center">"Driving Innovative Marketing Solutions for You"</h2>
+        <p class="w-80">"Our software house excels in delivering cutting-edge marketing solut elevate your brand and measurable results. We combine innovation with expertise to drive engagement and growth. Trust us to transform your vision into success, ensuring your business stands out in today's competitive digital landscape."</p>
+    </div>
+    <div class="h-500 w-80 overflow-hidden rounded bg-transparent box-shadow1 hover-box">
+        <img src="https://shopsphere.co/wp-content/uploads/2024/07/1-1.png" alt="graphic" style="height: 500px; width: 100%;" class="box-shadow1">
+    </div>
+</div>
+
     
+
+                                                <!-- Fixed background image section  -->
+
+<div class="h-500 w-100 imgs bg-img">
+    <div class="bg-overlay2">
+        <div class="d-flex flex-column justify-content-center align-items-center p-5 w-50 h-100 lh-5 gap-3">
+            <h2 class="text-light">"Excellence Through Efficiency"</h2>
+            <p class="text-light text-align">"Our software house is built on a foundation of efficiency and excellence. We deliver high-quality work with precision, ensuring every project is completed on time and beyond expectations. By leveraging advanced tools and streamlined processes, we maximize productivity, minimize delays, and provide exceptional results that drive your business forward with confidence. Our software house is built on a foundation of efficiency and excellence. We deliver high-quality work with precision, ensuring every project is completed on time and beyond expectations. By leveraging advanced tools and streamlined processes, we maximize productivity, minimize delays, and provide exceptional results that drive your business forward with confidence."</p>
+            <a href="/contact.html" class="text-decoration-none text-info border border-1 border-info py-1 px-3 rounded1">Contact Us</a>
+        </div>
+    </div>
+    
+</div>
+
+
+                                                <!-- Last section to add contact shortcut  -->
+
+<div class="container h-600 d-flex justify-content-evenly align-items-center bg-light hover-box box-shadow1 rounded border border-2 border-dark my-5">
+    <div class="d-flex w-40 h-500 bg-primary text-light rounded1 box-shadow1">
+        <form action="submit" class="w-100 h-100 d-flex flex-column justify-content-center ps-5 gap-2">
+            <h2 class="h6 fs-1">Get in Touch with Us!</h2>
+            <label for="text">Your Name</label>
+            <input type="text" class="border-bottom border-end border-0 border-light bg-transparent w-80">
+            <label for="email">Your Email</label>
+            <input type="email" class="border-bottom border-end border-0 border-light bg-transparent w-80">
+            <label for="message">Your Message</label>
+            <textarea rows="6" cols="20" class="bg-transparent w-80 border border-1 border-light"></textarea>
+            <a href="skylinewebstudio@gmail.com" class="text-decoration-none text-light border border-1 border-light mt-2 py-2 px-3 rounded1" style="width: 150px;">SEND MESSAGE</a>
+        </form>
+    </div>
+    <div class="w-40 h-500 ps-5 pt-4">
+        <form action="info" class="">
+            <h2 class="h6 fs-1">Our Bussiness Hours!</h2>
+            <ul>
+                <li class="py-3">Monday: 09:00 AM ___ 04:00PM</li>
+                <li class="pb-3">Friday: 08:00 AM ___ 12:30PM</li>
+                <li class="pb-3">Monday: 10:00 AM ___ 02:00PM</li>
+                <li>Sunday: Off (Contact us, Our team will reply ASAP)</li>
+            </ul>
+        </form>
+        <ul class="pt-3">
+            <li class="py-3 fs-5"><i class="fa-brands fa-facebook text-primary fs-4 pe-3"></i> Facebook</li>
+            <li class="pb-3 fs-5"><i class="fa-brands fa-square-whatsapp text-success fs-4 pe-3"></i> Whatsapp</li>
+            <li class="pb-3 fs-5"><i class="fa-brands fa-square-instagram text-danger fs-4 pe-3"></i> Instagram</li>
+            <li class="fs-5"><i class="fa-brands fa-twitter text-primary fs-4 pe-3"></i> Twitter</li>
+        </ul>
+    </div>
+</div>
+
+<script src="scripts.js" defer></script>
+
+                                                <!-- Footer  -->
+<div id="footer"></div>
+<script>
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading footer:', error));
+  </script>
+  
+
+<!-- <div id="footer">
+    <iframe src="footer.html" style="width: 100%; height: 260px;"></iframe>
+</div> -->
+
 
 
                                     <!-- Attaching Navbar to all pages via Script  -->
@@ -38,17 +422,7 @@
 
 
                         <!-- Attaching Bootstrap via Script to load Bootstrap stylesto all pages  -->
-          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-
-
-                                    <!-- Attaching footer to all pages vis Sript  -->
-<div id="footer"></div>
-<script>
-    fetch('footer.html')
-        .then(response => response.text())
-        .then(data => document.getElementById('footer').innerHTML = data)
-        .catch(error => console.error('Error loading footer:', error));
-</script>
 </body>
 </html>
