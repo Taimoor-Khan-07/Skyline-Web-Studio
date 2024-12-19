@@ -7,9 +7,277 @@
     <script src="https://kit.fontawesome.com/bd9fd7b14d.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
-        #footer{
-            margin-top: auto;
+        .video-container {
+            width: 100%;
+            height: 600px;
+            overflow: hidden;
+            position: relative;
         }
+        .video-container video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+  .lh-8{
+    line-height: 60px;
+  }
+  .h6 {
+    font-family: 'Playfair Display', serif;
+}
+
+.rounded1{
+    border-radius: 60px;
+}
+.w-40{
+    width: 40%;
+}
+.w-60{
+    width: 60%;
+}
+.w-80{
+    width: 80%;
+}
+.h-200{
+    height: 200px;
+}
+.h-500{
+    height: 500px;
+}
+.h-600{
+    height: 600px;
+}
+.me-6{
+    margin-right: 450px;
+}
+.mt-200{
+    margin-top: 200px;
+}
+.box-shadow{
+    box-shadow: 1px 1px 5px blue;
+    box-shadow: 15px 15px 25px blue;
+}
+.hover-container:hover{
+    transform: scale(1.2);
+    transition: all 0.5s ease-out;
+    color: rgb(56, 186, 247) !important;
+}
+.hover-container{
+    animation: in-animation 5s ease-in-out 0s 1 normal;
+}
+.hover-box:hover{
+    background-color: transparent !important;
+    box-shadow: 15px 15px 20px blue;
+}
+.text-justify{
+    font-size: 18px;
+    text-align: justify;
+}
+.box-shadow1{
+    box-shadow: 15px 15px 20px rgb(0, 0, 0);
+}
+@keyframes in-animation{
+    0%{
+        transform: translateY(-100px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+
+.carousel-container img {
+  transition: transform 2s ease-in-out, opacity 4s ease;
+}
+
+.small-div {
+  width: 300px;
+  height: 250px;
+  opacity: 1;
+  transform: scale(0.8);
+  border-radius: 12px;
+}
+
+.large-div {
+  width: 800px;
+  height: 396px;
+  opacity: 1;
+  transform: scale(1);
+  border-radius: 12px;
+}
+.imgs{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-overlay{
+    width: 800px;
+    height: 396px;
+    background-color: black;
+    opacity: 0.8;
+}
+.bg-overlay2{
+    width: 100%;
+    height: 500px;
+    background-color: black;
+    opacity: 0.8;
+}
+.img1{
+    background-image: url(https://th.bing.com/th/id/OIP.O5YbFh_zSnYhdRXQ_zISYwHaEX?w=1000&h=590&rs=1&pid=ImgDetMain);
+}
+.img2{
+    background-image: url(https://th.bing.com/th/id/OIP.keu6UonKZhyvHS5smrNYSgHaEK?rs=1&pid=ImgDetMain);
+}
+.img3{
+    background-image: url(https://th.bing.com/th/id/OIP.MbyMC8haOK_5Z2W4aS4qcwHaE8?w=600&h=400&rs=1&pid=ImgDetMain);
+}
+.img4{
+    background-image: url(https://media.cmsmax.com/xsdubkfweikfktqwxrdz8/our-solutions.jpg);
+}
+.img5{
+    background-image: url(https://img.freepik.com/premium-vector/web-development-software-coding-programming-application-laptop-computer-devices_251139-154.jpg?w=740);
+}
+.img6{
+    background-image: url(https://th.bing.com/th/id/OIP.maAShORDeln4A7tnxZOAKQHaD0?w=800&h=413&rs=1&pid=ImgDetMain);
+}
+.img7{
+    background-image: url(https://th.bing.com/th/id/R.065ab6720b1e60e7e31d4ce23e3a6cf8?rik=oGSqyTOLRAB7gw&pid=ImgRaw&r=0);
+}
+.img8{
+    background-image: url(https://th.bing.com/th/id/OIP.gb2Ds1HaK0lls_YUoa_RvgHaFJ?w=647&h=450&rs=1&pid=ImgDetMain);
+}
+.img9{
+    background-image: url(https://miro.medium.com/v2/resize:fit:896/0*vDYDl1nCWOTFv0zw.jpg);
+}
+.img10{
+    background-image: url(https://th.bing.com/th/id/OIP.y328XxRb9vOcS8HN0pAwKAHaEO?w=896&h=512&rs=1&pid=ImgDetMain);
+}
+.img11{
+    background-image: url(https://th.bing.com/th/id/OIP.3zswZHYWUKKWr3AQ6FWPZAHaEO?w=1792&h=1024&rs=1&pid=ImgDetMain);
+}
+.img12{
+    background-image: url(https://th.bing.com/th/id/OIP.zBZu7x-eyO5Ka5qi60yhBgHaD4?w=680&h=357&rs=1&pid=ImgDetMain);
+}
+.img13{
+    background-image: url(https://th.bing.com/th/id/OIP.acGPQ-I10Kk8kae3ncYQFQHaE8?rs=1&pid=ImgDetMain);
+}
+.img14{
+    background-image: url(https://th.bing.com/th/id/OIP.g8XGtWN67DphmDPPm51bDAHaFQ?rs=1&pid=ImgDetMain);
+}
+.img15{
+    background-image: url(https://lh4.googleusercontent.com/bU5POXIi98Ux4fQCNT-oBsb3meIPTB2NfCia2yXIglCzF-Ootp8Om6vtHoCswxaN8DixW8o96Co2NHVgvCA1V-8pLxsjia_tcVEZfm623n3jCDA7045aMvfLd9uS5w);
+}
+.img16{
+    background-image: url(https://cdn3.vectorstock.com/i/1000x1000/99/52/abstract-background-technology-design-vector-21309952.jpg);
+}
+.img17{
+    background-image: url(https://th.bing.com/th/id/OIP.QGr8wOp4_GDoqnvDHTY0lAHaFx?w=1000&h=780&rs=1&pid=ImgDetMain);
+}
+.img18{
+    background-image: url(https://www.shutterstock.com/image-vector/dark-blue-circular-abstract-technology-260nw-1739501084.jpg);
+}
+.img19{
+    background-image: url(https://img.freepik.com/free-photo/cardano-blockchain-platform_23-2150411956.jpg);
+}
+.img20{
+    background-image: url(https://th.bing.com/th/id/OIP.ulgIUOumRK4Bvqeddju7mwHaFQ?rs=1&pid=ImgDetMain);
+}
+.img21{
+    background-image: url(https://th.bing.com/th/id/OIP.1exgp2wM5-UKtjZfUay2OwHaEW?w=1900&h=1118&rs=1&pid=ImgDetMain);
+}
+.img22{
+    background-image: url(https://img.freepik.com/premium-vector/online-business-internet-trading-concept_387612-792.jpg);
+}
+.img23{
+    background-image: url(https://th.bing.com/th/id/OIP.NUhZqyqlb94IGMYLgzK4awHaEH?w=555&h=309&rs=1&pid=ImgDetMain);
+}
+.img24{
+    background-image: url(https://th.bing.com/th/id/OIP.ptxvWaGTYfFujtK7geYJPwHaDP?w=800&h=350&rs=1&pid=ImgDetMain);
+}
+.img25{
+    background-image: url(https://th.bing.com/th/id/OIP.kKyxy82mPjhKOCBBevKNoAHaDl?rs=1&pid=ImgDetMain);
+}
+.img26{
+    background-image: url(https://th.bing.com/th/id/OIP.RHmfymHYn9m4mI5qomkC-AHaE-?w=640&h=430&rs=1&pid=ImgDetMain);
+}
+.img27{
+    background-image: url(https://th.bing.com/th/id/OIP.xi_VY54V535hztHz11VTyQHaFL?w=2560&h=1792&rs=1&pid=ImgDetMain);
+}
+.img28{
+    background-image: url(https://wallpapercave.com/wp/wp3708452.jpg);
+}
+.img29{
+    background-image: url(https://th.bing.com/th/id/OIP.DXPj7lrydzSTMwZpeDOg9wHaE8?w=600&h=400&rs=1&pid=ImgDetMain);
+}
+.img30{
+    background-image: url(https://th.bing.com/th/id/OIP.EvnMjcAX5gWUShz3I4svdgHaEH?w=1600&h=889&rs=1&pid=ImgDetMain);
+}
+.img31{
+    background-image: url(https://foresight.com.sa/wp-content/uploads/2021/05/cs.jpg);
+}
+.img32{
+    background-image: url(https://th.bing.com/th/id/OIP.8TjyFX1TQuCoXbVzJtlQyQHaEo?rs=1&pid=ImgDetMain);
+}
+.img33{
+    background-image: url(https://img.freepik.com/premium-photo/secure-digital-network-with-cyber-protection-abstract-concept-illustration-technology-safety-data-privacy_674594-39633.jpg);
+}
+.img34{
+    background-image: url(https://th.bing.com/th/id/OIP.hVFC5FAMI-QpHEZA8UFERgHaDe?w=1395&h=655&rs=1&pid=ImgDetMain);
+}
+.img35{
+    background-image: url(https://th.bing.com/th/id/OIP.-YTgPgO_d1NOu84zyPwSwwHaEK?w=960&h=540&rs=1&pid=ImgDetMain);
+}
+.img36{
+    background-image: url(https://www.baesystems.com/en-media/webImageWebp/20221007131122/1573683352743.webp);
+}
+.bg-img{
+    background-image: url(https://shopsphere.co/wp-content/uploads/2024/07/web-1.png);
+}
+.bg-body{
+    background-color: blue;
+}
+.hero-bg{
+    height: 800px;
+    width: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+.overlay {
+position: absolute;
+display: flex;
+flex-direction: row-reverse;
+top: 5;
+left: 0;
+width: 100%;
+height: 800px;
+background-color: rgba(0, 0, 0, 0.65);
+z-index: 1000;
+  }
+.h-200{
+    height: 250px;
+}
+.h-300{
+    height: 300px;
+}
+.h-400{
+    height: 400px;
+}
+.bg-linearss{
+    background: linear-gradient(160deg, white 10%, rgb(0, 217, 255) 70%, black 70%, rgb(0, 217, 255) 90%);
+}
+.h6{
+    font-size: 100px;
+}
+
     </style>
 </head>
 <body class="bg-info">
@@ -17,8 +285,583 @@
     <div id="navbar"></div>
 
 
+                                        <!-- SubHero sectio of Services page -->
+
+<section class="hero-bg">
+    <div class="overlay d-flex flex-column  justify-content-center align-items-center">
+        <div class="d-flex justify-content-center align-items-center h-500 w-50 flex-column in-animation hover-container text-light">
+            <h2 class="in-animation hover-container text-light h1 pb-3">Boost your cloud journey with our <br>triple-certified engineering teams.</h2>
+            <p class="text-light fs-8">
+                "At our software house, we specialize in delivering cutting-edge IT solutions, including web development, web designing, and innovative digital services. Our expert team is dedicated to crafting tailor-made solutions that drive growth and success for businesses of all sizes. Let us transform your ideas into powerful, functional, and visually stunning digital experiences that stand out."</p>
+                <a href="/contact.html" class="hover-container text-decoration-none text-info border border-1 border-info p-2 rounded1">More About Us</a>
+        </div>
+        <div class="d-flex justify-content-center text-align-center text-light gap-5 container h-300">
+            <div class="d-flex flex-column justify-content-center align-items-center box-shadow w-50 h-200 bg-dark gap-2 rounded px-5 border border-1 border-info">
+                <h2 class="text-light">Comprehensive IT Services</h2>
+                <p>"Explore our wide range of IT solutions, including web development, design, mobile apps, software solutions, maintenance, and more."</p>
+                <a href="/contact.html" class="
+                text-decoration-none text-light">More info</a>
+            </div>
+            <div class="d-flex flex-column justify-content-center align-items-center box-shadow w-50 h-200 bg-dark gap-2 rounded px-5 border border-1 border-info">
+                <h2>Empowering Digitalizations</h2>
+                <p>"From strategy to execution, our expert team ensures all your digital needs are met with creativity, precision, and innovation."</p>
+                <a href="/contact.html" class="text-decoration-none text-light">More info</a>
+            </div>
+        </div>
+        </div>
+        <video autoplay loop muted playsinline>
+            <source src="https://videos.pexels.com/video-files/3141207/3141207-uhd_2560_1440_25fps.mp4" 
+            type="video/mp4">
+        </video>
+</section>
+
+
+                                            <!-- Header for services  -->
+
+<section class="bg-light border border-3 border-primary rounded1 my-5 sticky-top">
+    <div class="container">
+        <ul class="d-flex justify-content-evenly align-items-center list-unstyled">
+            <li><a href="#frontend" class="fs-4 text-dark text-decoration-none">Frontend</a></li>
+            <li><a href="#backend" class="fs-4 text-dark text-decoration-none">Backend</a></li>
+            <li><a href="#designing" class="fs-4 text-dark text-decoration-none">Designing</a></li>
+            <li><a href="#e-Commerce" class="fs-4 text-dark text-decoration-none">E-commerce</a></li>
+            <li><a href="#web-app" class="fs-4 text-dark text-decoration-none">Web app</a></li>
+            <li><a href="#web-security" class="fs-4 text-dark text-decoration-none">Web security</a></li>
+        </ul>
+    </div>
+</section>
+
+<section>
+                                                <!-- frontend hero  -->
+    <div id="frontend">
+        <div class="d-flex justify-content-center align-items-center h-500 w-100 bg-linearss">
+            <div class="d-flex flex-column justify-content-center align-items-center w-50 h-500 px-5 gap-3">
+                <h2 class="text-primary h1"># FRONTEND DEV</h2>
+                <h3 class="h2">Seamless Interfaces</h3>
+                <p class="fs-5 px-3">"Designing interactive, responsive interfaces that prioritize user experience and adaptability, ensuring smooth digital interactions that captivate users and deliver visually engaging content across various devices seamlessly."</p>
+                <a href="/contact.html" class="text-dark">More info</a>
+            </div>
+            <div class=" d-flex justify-content-center align-items-center w-50 h-500 overflow-hidden">
+                <video autoplay loop muted playsinline style="height: 600px; width: 550px;">
+                    <source src="https://videos.pexels.com/video-files/1350205/1350205-hd_1920_1080_30fps.mp4" 
+                    type="video/mp4">
+                </video>
+            </div>
+        </div>
+                                                <!-- frontend info  -->
+        <div class="d-flex align-items-center flex-column pt-5 my-5 gap-3 h-300 bg-light container rounded1 border border-3 border-dark box-shadow">
+            <h2>Experience, Excellence, Quality Frontend Solutions</h2>
+            <p class="px-5">  
+                "With years of expertise in frontend development, we take pride in delivering high-quality, visually stunning, and user-friendly interfaces. Our team is dedicated to creating responsive designs that work seamlessly across all devices, ensuring an exceptional user experience. By leveraging modern tools and best practices, we deliver solutions that are not only aesthetically pleasing but also efficient and reliable. Our commitment to excellence and attention to detail guarantees a product that meets your business goals and exceeds expectations. Trust us to bring your ideas to life with precision, innovation, and a focus on quality that sets your brand apart."</p>
+        </div>
+                                                <!-- frontend caroussel  -->
+        <section class="my-5">
+            <div id="customCarousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="carousel-container h-500">
+                    <div class="small-div imgs img1 box-shadow"></div>
+                    <div class="large-div imgs img2 box-shadow1">
+                    </div>
+                    <div class="small-div imgs img3 box-shadow"></div>            
+                  </div>
+                </div>
+        
+                <div class="carousel-item">
+                  <div class="carousel-container h-500">
+                    <div class="small-div imgs img2 box-shadow"></div>
+                    <div class="large-div imgs img3 box-shadow1">
+                    </div>
+                    <div class="small-div imgs img4 box-shadow"></div>            
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="carousel-container h-500">
+                    <div class="small-div imgs img3 box-shadow"></div>
+                    <div class="large-div imgs img4 box-shadow1">
+                    </div>
+                    <div class="small-div imgs img5 box-shadow"></div>            
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="carousel-container h-500">
+                    <div class="small-div imgs img4 box-shadow"></div>
+                    <div class="large-div imgs img5 box-shadow1">
+                    </div>
+                    <div class="small-div imgs img6 box-shadow"></div>            
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="carousel-container h-500">
+                    <div class="small-div imgs img5 box-shadow"></div>
+                    <div class="large-div imgs img6 box-shadow1">
+                    </div>
+                    <div class="small-div imgs img1 box-shadow"></div>            
+                  </div>
+                </div>
+        
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#customCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#customCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            
+          </section>
+    </div>
+
+
+    <div id="backend">
+                                                    <!-- backen hero  -->
+        <div class="d-flex justify-content-center align-items-center h-500 w-100 bg-linearss">
+            <div class="d-flex flex-column justify-content-center align-items-center w-50 h-500 px-5 gap-3">
+                <h2 class="text-primary h1"># Backend Dev</h2>
+                <h3 class="h2">Dynamic Systems</h3>
+                <p>"Creating robust, scalable backend systems that handle data processing, storage, and integrations effortlessly, ensuring application performance remains smooth, secure, and reliable even during peak usage periods."</p>
+                <a href="/contact.html" class="text-dark">More info</a>
+            </div>
+            <div class=" d-flex justify-content-center align-items-center w-50 h-500 overflow-hidden">
+                <video autoplay loop muted playsinline style="height: 600px; width: 550px;">
+                    <source src="https://videos.pexels.com/video-files/2890236/2890236-hd_1920_1080_30fps.mp4" 
+                    type="video/mp4">
+                </video>
+            </div>
+        </div>
+                                                    <!-- backend info  -->
+        <div class="d-flex align-items-center flex-column pt-5 my-5 gap-3 h-300 bg-light container rounded1 border border-3 border-dark box-shadow">
+            <h2>Dynamic and Scalable Backend Systems</h2>
+            <p class="px-5">  
+                "Backend solutions form the backbone of any successful digital product. Our team specializes in creating robust, secure, and scalable systems tailored to your unique requirements. From database management to API integrations, we ensure seamless operations and reliable performance under heavy loads. By employing cutting-edge technologies and best practices, we deliver backend architectures that are efficient and future-proof. Our expertise ensures that your digital platforms run smoothly, providing users with a consistent and flawless experience. With a focus on functionality and security, we develop backend solutions that enable your business to grow and adapt to evolving market demands."</p>
+        </div>
+
+                                                    <!-- backend carousel  -->
+
+        <section class="my-5">
+            <div id="customCarousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="carousel-container h-500">
+                    <div class="small-div imgs img7 box-shadow"></div>
+                    <div class="large-div imgs img8 box-shadow1">
+                    </div>
+                    <div class="small-div imgs img9 box-shadow"></div>            
+                  </div>
+                </div>
+        
+                <div class="carousel-item">
+                  <div class="carousel-container h-500">
+                    <div class="small-div imgs img8 box-shadow"></div>
+                    <div class="large-div imgs img9 box-shadow1">
+                    </div>
+                    <div class="small-div imgs img10 box-shadow"></div>            
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="carousel-container h-500">
+                    <div class="small-div imgs img9 box-shadow"></div>
+                    <div class="large-div imgs img10 box-shadow1">
+                    </div>
+                    <div class="small-div imgs img11 box-shadow"></div>            
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="carousel-container h-500">
+                    <div class="small-div imgs img10 box-shadow"></div>
+                    <div class="large-div imgs img11 box-shadow1">
+                    </div>
+                    <div class="small-div imgs img12 box-shadow"></div>            
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="carousel-container h-500">
+                    <div class="small-div imgs img11 box-shadow"></div>
+                    <div class="large-div imgs img12 box-shadow1">
+                    </div>
+                    <div class="small-div imgs img7 box-shadow"></div>            
+                  </div>
+                </div>
+        
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#customCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#customCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            
+          </section>                                            
+    </div>
+
+                                                    <!-- Designing Hero  -->
+    <div id="designing">
+        <div class="d-flex justify-content-center align-items-center h-500 w-100 bg-linearss">
+            <div class="d-flex flex-column justify-content-center align-items-center w-50 h-500 px-5 gap-3">
+                <h2 class="text-primary h1"># Web Designing</h2>
+                <h3 class="h2">Visual Excellence</h3>
+                <p>"Crafting visually stunning designs that blend creativity with functionality, offering intuitive layouts, enhancing user experiences, and leaving a lasting impression aligned with your brand identity."</p>
+                <a href="/contact.html" class="text-dark">More info</a>
+            </div>
+            <div class=" d-flex justify-content-center align-items-center w-50 h-500 overflow-hidden">
+                <video autoplay loop muted playsinline style="height: 600px; width: 550px;">
+                    <source src="https://videos.pexels.com/video-files/1957727/1957727-hd_1920_1080_30fps.mp4" 
+                    type="video/mp4">
+                </video>
+            </div>                                           
+        </div>
+                                                    <!-- Designing info  -->
+            <div class="d-flex align-items-center flex-column pt-5 my-5 gap-3 h-300 bg-light container rounded1 border border-3 border-dark box-shadow">
+                <h2>Creativity That Powers Visual Design</h2>
+                <p class="px-5">Creativity That Powers Visual Desi"Our design team combines artistry with strategy to craft compelling visuals that resonate with your audience. By  focusing on both aesthetics and usability, we create designs that elevate your brand identity and provide aunforgettable user experience. Whether it’s websites, apps, or marketing materials, our designs are aligned with yourgoals and leave a lasting impression. Utilizing modern design tools and trends, we ensure your project stands out in a  crowded market. Trust us to transform your ideas into visually stunning solutions that effectively communicate your  message and captivate your audience."</p>
+            </div>
+
+                                                    <!-- designing carousel  -->
+
+        <section class="my-5">
+            <div id="customCarousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="carousel-container h-500">
+                    <div class="small-div imgs img18 box-shadow"></div>
+                    <div class="large-div imgs img13 box-shadow1">
+                    </div>
+                    <div class="small-div imgs img14 box-shadow"></div>            
+                  </div>
+                </div>
+        
+                <div class="carousel-item">
+                  <div class="carousel-container h-500">
+                    <div class="small-div imgs img13 box-shadow"></div>
+                    <div class="large-div imgs img14 box-shadow1">
+                    </div>
+                    <div class="small-div imgs img15 box-shadow"></div>            
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="carousel-container h-500">
+                    <div class="small-div imgs img14 box-shadow"></div>
+                    <div class="large-div imgs img15 box-shadow1">
+                    </div>
+                    <div class="small-div imgs img16 box-shadow"></div>            
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="carousel-container h-500">
+                    <div class="small-div imgs img15 box-shadow"></div>
+                    <div class="large-div imgs img16 box-shadow1">
+                    </div>
+                    <div class="small-div imgs img17 box-shadow"></div>            
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="carousel-container h-500">
+                    <div class="small-div imgs img16 box-shadow"></div>
+                    <div class="large-div imgs img17 box-shadow1">
+                    </div>
+                    <div class="small-div imgs img18 box-shadow"></div>            
+                  </div>
+                </div>
+        
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#customCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#customCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            
+        </section>
+    </div>
+
+                                                    <!-- e-Commerce hero  -->
+    <div id="e-Commerce">
+        <div class="d-flex justify-content-center align-items-center h-500 w-100 bg-linearss">
+            <div class="d-flex flex-column justify-content-center align-items-center w-50 h-500 px-5 gap-3">
+                <h2 class="text-primary h1"># e-Commerce</h2>
+                <h3 class="h2">Smart Commerce</h3>
+                <p>"Developing advanced e-commerce platforms that enhance customer engagement, simplify purchasing processes, improve conversion rates, and ensure a seamless shopping experience with secure and efficient transaction handling."</p>
+                <a href="/contact.html" class="text-dark">More info</a>
+            </div>
+            <div class=" d-flex justify-content-center align-items-center w-50 h-500 overflow-hidden">
+                <video autoplay loop muted playsinline style="height: 600px; width: 550px;">
+                    <source src="https://videos.pexels.com/video-files/3866849/3866849-uhd_2560_1440_25fps.mp4" 
+                    type="video/mp4">
+                </video>
+            </div>
+        </div>
+                                                    <!-- e-Commerce info  -->
+            <div class="d-flex align-items-center flex-column pt-5 my-5 gap-3 h-300 bg-light container rounded1 border border-3 border-dark box-shadow">
+                <h2>E-commerce Built for Business Success</h2>
+                    <p class="px-5">"In the fast-paced world of online shopping, we deliver custom e-commerce solutions designed to drive sales and enhance customer engagement. From intuitive user interfaces to secure payment gateways, our e-commerce platforms are tailored for seamless shopping experiences. We ensure every feature works harmoniously, from product catalogs to checkout flows. Our solutions are optimized for speed, scalability, and search engine visibility, helping your store thrive in a competitive market. By leveraging advanced tools and analytics, we help you understand your customers better and grow your business effectively."</p>
+            </div>
+
+                                                    <!-- e-Commerce carousel  -->
+
+    <section class="my-5">
+            <div id="customCarousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="carousel-container h-500">
+                    <div class="small-div imgs img19 box-shadow"></div>
+                    <div class="large-div imgs img20 box-shadow1">
+                    </div>
+                    <div class="small-div imgs img21 box-shadow"></div>            
+                  </div>
+                </div>
+        
+                <div class="carousel-item">
+                  <div class="carousel-container h-500">
+                    <div class="small-div imgs img20 box-shadow"></div>
+                    <div class="large-div imgs img21 box-shadow1">
+                    </div>
+                    <div class="small-div imgs img22 box-shadow"></div>            
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="carousel-container h-500">
+                    <div class="small-div imgs img21 box-shadow"></div>
+                    <div class="large-div imgs img22 box-shadow1">
+                    </div>
+                    <div class="small-div imgs img23 box-shadow"></div>            
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="carousel-container h-500">
+                    <div class="small-div imgs img22 box-shadow"></div>
+                    <div class="large-div imgs img23 box-shadow1">
+                    </div>
+                    <div class="small-div imgs img24 box-shadow"></div>            
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="carousel-container h-500">
+                    <div class="small-div imgs img23 box-shadow"></div>
+                    <div class="large-div imgs img24 box-shadow1">
+                    </div>
+                    <div class="small-div imgs img19 box-shadow"></div>            
+                  </div>
+                </div>
+        
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#customCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#customCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            
+        </section>
+    </div>
+
+                                                    <!-- web app hero  -->
+    <div id="web-app">
+        <div class="d-flex justify-content-center align-items-center h-500 w-100 bg-linearss">
+            <div class="d-flex flex-column justify-content-center align-items-center w-50 h-500 px-5 gap-3">
+                <h2 class="text-primary h1"># Web Apps</h2>
+                <h3 class="h2">Tailored Solutions</h3>
+                <p>"Building customized web applications designed to meet specific business requirements, integrating innovative features, and delivering high performance for consistent user satisfaction and operational success."</p>
+                <a href="/contact.html" class="text-dark">More info</a>
+            </div>
+            <div class=" d-flex justify-content-center align-items-center w-50 h-500 overflow-hidden">
+                <video autoplay loop muted playsinline style="height: 600px; width: 550px;">
+                    <source src="https://videos.pexels.com/video-files/979689/979689-hd_1920_1080_30fps.mp4" 
+                    type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+                                                    <!-- web-app  info  -->
+        <div class="d-flex align-items-center flex-column pt-5 my-5 gap-3 h-300 bg-light container rounded1 border border-3 border-dark box-shadow">
+                <h2>Web Applications Tailored to Innovate</h2>
+                    <p class="px-5">"Our web application development services are designed to provide businesses with custom solutions that address their specific needs. Whether it’s an internal tool or a customer-facing platform, we deliver high-performance, feature-rich applications that are easy to use and maintain. Our team employs the latest technologies and development frameworks to ensure your web apps are secure, scalable, and future-ready. With a focus on functionality and user experience, we create applications that help you achieve your business objectives efficiently. Partner with us for web apps that deliver results and empower your digital transformation."</p>
+        </div>
+
+                                                    <!-- web app carousel  -->
+
+    <section class="my-5">
+            <div id="customCarousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="carousel-container h-500">
+                    <div class="small-div imgs img25 box-shadow"></div>
+                    <div class="large-div imgs img26 box-shadow1">
+                    </div>
+                    <div class="small-div imgs img27 box-shadow"></div>            
+                  </div>
+                </div>
+        
+                <div class="carousel-item">
+                  <div class="carousel-container h-500">
+                    <div class="small-div imgs img26 box-shadow"></div>
+                    <div class="large-div imgs img27 box-shadow1">
+                    </div>
+                    <div class="small-div imgs img28 box-shadow"></div>            
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="carousel-container h-500">
+                    <div class="small-div imgs img27 box-shadow"></div>
+                    <div class="large-div imgs img28 box-shadow1">
+                    </div>
+                    <div class="small-div imgs img29 box-shadow"></div>            
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="carousel-container h-500">
+                    <div class="small-div imgs img28 box-shadow"></div>
+                    <div class="large-div imgs img29 box-shadow1">
+                    </div>
+                    <div class="small-div imgs img30 box-shadow"></div>            
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="carousel-container h-500">
+                    <div class="small-div imgs img29 box-shadow"></div>
+                    <div class="large-div imgs img30 box-shadow1">
+                    </div>
+                    <div class="small-div imgs img24 box-shadow"></div>            
+                  </div>
+                </div>
+        
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#customCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#customCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            
+        </section>
+
+    </div>
+                                                    <!-- web security  -->
+
+    <div id="web-security">
+        <div class="d-flex justify-content-center align-items-center h-500 w-100 bg-linearss">
+            <div class="d-flex flex-column justify-content-center align-items-center w-50 h-500 px-5 gap-3">
+                <h2 class="text-primary h1"># Web Security</h2>
+                <h3 class="h2">Secure Platforms</h3>
+                <p>"Implementing comprehensive web security measures to safeguard sensitive data, prevent cyberattacks, and maintain trust with users by ensuring websites remain resilient and well-protected at all times."</p>
+                <a href="/contact.html" class="text-dark">More info</a>
+            </div>
+            <div class=" d-flex justify-content-center align-items-center w-50 h-500 overflow-hidden">
+                <video autoplay loop muted playsinline style="height: 600px; width: 550px;">
+                    <source src="https://videos.pexels.com/video-files/854236/854236-hd_1280_720_29fps.mp4" 
+                    type="video/mp4">
+                </video>
+            </div>
+        </div>
+                                                    <!-- web-security  info  -->
+        <div class="d-flex align-items-center flex-column pt-5 my-5 gap-3 h-300 bg-light container rounded1 border border-3 border-dark box-shadow">
+                <h2>Unwavering Security for Digital Platforms</h2>
+                <p class="px-5">"Protecting your digital assets is our top priority. We implement advanced security measures to safeguard websites and applications against cyber threats, ensuring data privacy and compliance. Our solutions include encryption, firewalls, regular security audits, and real-time monitoring to identify and neutralize vulnerabilities promptly. With the growing complexity of online threats, our proactive approach ensures that your digital platforms remain resilient and trustworthy. Whether it’s securing sensitive user data or protecting business-critical applications, we deliver robust security solutions tailored to your needs. Trust us to keep your online presence safe and secure around the clock."</p>
+        </div>
+
+                                                    <!-- web security caarousel  -->
+
+        <section class="my-5">
+            <div id="customCarousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="carousel-container h-500">
+                    <div class="small-div imgs img31 box-shadow"></div>
+                    <div class="large-div imgs img32 box-shadow1">
+                    </div>
+                    <div class="small-div imgs img33 box-shadow"></div>            
+                  </div>
+                </div>
+        
+                <div class="carousel-item">
+                  <div class="carousel-container h-500">
+                    <div class="small-div imgs img32 box-shadow"></div>
+                    <div class="large-div imgs img33 box-shadow1">
+                    </div>
+                    <div class="small-div imgs img34 box-shadow"></div>            
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="carousel-container h-500">
+                    <div class="small-div imgs img33 box-shadow"></div>
+                    <div class="large-div imgs img34 box-shadow1">
+                    </div>
+                    <div class="small-div imgs img35 box-shadow"></div>            
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="carousel-container h-500">
+                    <div class="small-div imgs img34 box-shadow"></div>
+                    <div class="large-div imgs img35 box-shadow1">
+                    </div>
+                    <div class="small-div imgs img36 box-shadow"></div>            
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="carousel-container h-500">
+                    <div class="small-div imgs img35 box-shadow"></div>
+                    <div class="large-div imgs img36 box-shadow1">
+                    </div>
+                    <div class="small-div imgs img31 box-shadow"></div>            
+                  </div>
+                </div>
+        
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#customCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#customCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            
+        </section>
+    </div>
+</section>
+                                                    <!-- client section  -->
+
+<section class="w-100 h-100 my-5">
+    <div class="d-flex container h-100 bg-dark w-100 rounded1 overflow-hidden p-0">
+        <div class="w-40">
+            <img src="https://a.storyblok.com/f/99519/982x400/46c002a7b2/the-client-home-banner.png/m/416x172/filters:format(webp):quality(90)" alt="client">
+        </div>
+        <div class="d-flex w-60 justify-content-center align-items-center">
+            <h2 class="text-light w-60 h3">
+                "Exceptional quality,<br>reliable solutions, and outstanding support every time!"
+            </h2>
+            <a href="/contact.html" class="text-light w-40 fs-5 ps-5">More info</a>
+        </div>
+    </div>
+</section>
     
 
+<script src="scripts.js" defer></script>
+
+
+<div id="footer"></div>
+<script>
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading footer:', error));
+</script>
 
                                     <!-- Attaching Navbar to all pages via Script  -->
     <script>
@@ -30,22 +873,8 @@
 
 
 
-                        <!-- Attaching Bootstrap via Script to load Bootstrap stylesto all pages  -->
-          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-          </script>
-
-
-
-                                    <!-- Attaching footer to all pages vis Sript  -->
-
-<div id="footer"></div>
-<script>
-    fetch('footer.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('footer').innerHTML = data;
-      })
-      .catch(error => console.error('Error loading footer:', error));
-  </script>
+                      <!-- Attaching Bootstrap via Script to load Bootstrap stylesto all pages  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
 </body>
 </html>

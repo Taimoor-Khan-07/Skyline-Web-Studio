@@ -1,41 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SignUp-page</title>
-    <link rel="stylesheet" href="/SignUp.css">
+  <meta charset="UTF-8">
+  <title>Login &amp; signup form</title>
+  <link rel="stylesheet" href="./SignUp.css">
+
 </head>
 <body>
-        <div class="container">
-          <div class="signUp-page">
-            <h2>signup Here</h2>
-            <form>
-                <div class="input">
-                    <label for="username" >username</label>
-                    <input type="text" placeholder="Type Your FullName">
-                </div><br>
-                <div class="input">
-                    <label for="Email">Email</label>
-                    <input type="email" placeholder="Enter Your Email ">
-                </div><br>
-                <div class="input">
-                    <label for="password">password</label>
-                    <input type="password" placeholder="Enter Password">
-                </div><br>
-               
-                    <button type="button" class="btn">signup</button>
-                
-            </form>
-            <div class="or-divider">or You already have an account</div>
-            <div class="Login">
-                <a href="/login.html">Login</a>
-            </div>
-          </div>
+<div class="wrapper">
+  <div class="title-text">
+    <div class="title login">Login Form</div>
+    <div class="title signup">Signup Form</div>
+  </div>
+  <div class="form-container">
+    <div class="slide-controls">
+      <input type="radio" name="slide" id="login" checked>
+      <input type="radio" name="slide" id="signup">
+      <label for="login" class="slide login">Login</label>
+      <label for="signup" class="slide signup">Signup</label>
+      <div class="slider-tab"></div>
+    </div>
+    <div class="form-inner">
+      <form action="#" class="login" onsubmit="event.preventDefault(); loginUsers();">
+        <div class="field">
+          <input type="email" id="loginEmail" placeholder="Email Address" required>
         </div>
+        <div class="field">
+          <input type="password" id="loginPass" placeholder="Password" required>
+        </div>
+        <div class="pass-link"><a href="#">Forgot password?</a></div>
+        <div class="field btn">
+          <div class="btn-layer"></div>
+          <input type="submit" value="Login">
+        </div>
+        <div class="signup-link">Not a member? <a href="#">Signup now</a></div>
+      </form>
 
 
+      <form id="signupForm" action="#" class="signup" onsubmit="event.preventDefault(); signupUsers();">
+          <div class="field">
+            <input type="text" id="userName" placeholder="Enter UserName" required>
+          </div>
+        <div class="field">
+          <input type="email" id="userEmail" placeholder="Email Address" required>
+        </div>
+        <div class="field">
+          <input type="password" id="userPass" placeholder="Password" required>
+        </div>
+        <div class="field btn">
+          <div class="btn-layer"></div>
+          <input type="submit" value="Signup">
+        </div>
+      </form>
 
-    <script src="/script.js"></script>
+
+    </div>
+  </div>
+</div>
+  <script  src="./script.js"></script>
+
 </body>
 </html>
