@@ -168,26 +168,31 @@
 .bg-body{
     background-color: blue;
 }
+.overflow-dots{
+    text-overflow: ellipsis
+}
 
 
     </style>
 </head>
 <body class="bg-info">
-                    <!-- Div for placement of navbar  -->
+                                        <!-- Div for placement of navbar  -->
     <div id="navbar"></div>
 
-                                    <!-- Hero Section work  -->
-    <div class="container-fluid p-0">
+                                        <!-- Hero Section work  -->
         <div class="video-container">
-            <div class="overlay">
-                <div class="d-flex flex-column justify-content-center align-items-center box-shadow w-40 h-200 mt-200 bg-dark gap-2 rounded me-5 px-5 border border-1 border-info">
-                    <h2 class="text-light">What We Do!</h2>
-                    <p class="text-light">
-                        "Transform your online presence with our expert services in frontend and backend development, stunning web design, SEO optimization, custom web applications, e-commerce solutions, and robust web security. We build powerful, user-friendly websites that drive results."</p>
+            <div class="overlay flex-column justify-content-center align-items-center flex-md-row gap-2">
+                <div class="d-flex flex-column justify-content-center align-items-center w-100 w-md-60 p-4 gap-5">
+                    <h2 class="in-animation hover-container text-light lh-md-8 fs-1 fs-md-8 text">"Empowering Solutions Crafting, Developing, and also Designing Exceptional Websites"</h2>
+                    <a href="/services.html" class="text-decoration-none border border-1 border-info rounded1 p-2 d-none d-md-block">More About Us</a>
                 </div>
-                <div class="d-flex justify-content-center align-items-center h-100 w-60 flex-column">
-                    <h2 class="in-animation hover-container text-light lh-8 fs-8">"Empowering Solutions<br>Crafting, Developing, and also<br> Designing Exceptional Websites"</h2>
-                    <a href="/services.html" class="hover-container text-decoration-none text-info border border-1 border-info py-2 px-3 rounded1 mt-5 me-6">More About Us</a>
+                <div class=" d-flex flex-column justify-content-center align-items-center w-100 w-md-40 p-4">
+                    <div class="d-flex flex-column justify-content-center align-items-center box-shadow lh-4 p-4 bg-dark rounded border border-1 border-info">
+                        <h2 class="text-light">What We Do!</h2>
+                        <p class="text-light text-justify">
+                            "Transform your online presence with our expert services in frontend and backend development,   stunning web design, SEO optimization, custom web applications, e-commerce solutions, and robust  web security. We build powerful, user-friendly websites that drive results."</p>
+                        <a href="/services.html" class="text-decoration-none border border-1 border-info rounded1 p-2 d-sm-none">More About Us</a>
+                    </div>
                 </div>
             </div>
             <video autoplay loop muted playsinline>
@@ -195,92 +200,93 @@
                 type="video/mp4">
             </video>
         </div>
-    </div>
+
   
-                                                
-                                                <!-- First Section Work starts from here  -->
-<div class="d-flex flex-column justify-content-center align-items-center mt-5">
-    <div class="w-60 h-100 border border-1 border-dark bg-light p-4 text-justify box-shadow1 rounded hover-box">
-        <h2>"Showcasing Our Core Skills and Service Offerings"</h2>
+                                                 
+                                        <!-- First Section Work starts from here  -->
+<div class="d-flex flex-column justify-content-center align-items-center my-5 container w-md-60 ">
+    <div class="h-100 border border-1 border-dark bg-light p-4 text-justify box-shadow1 rounded hover-box">
+        <h2 class=" text-center">"Showcasing Our Core Skills and Service Offerings"</h2>
         <p>Take a look at our exceptional work level, recognized globally with prestigious outputs. These achievements reflect our commitment to innovation, excellence, and delivering unparalleled results in every project.Take a look at our exceptional work level, recognized globally with prestigious outputs. These achievements reflect our commitment to innovation, excellence, and delivering unparalleled results in every project.</p>
     </div>
 </div>
-                                                <!-- carousel section  -->
+                                        <!-- carousel section  -->
   <section class="my-5">
     <div id="customCarousel" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
+      
         <div class="carousel-item active">
           <div class="carousel-container h-500">
-            <div class="small-div imgs img1 box-shadow"></div>
-            <div class="large-div imgs img2">
-                <div class="bg-overlay d-flex flex-column justify-content-center align-items-center gap-3 text-justify p-5 rounded box-shadow1">
-                    <h2 class="text-light">"Crafting Stunning Frontend Experiences"</h2>
-                    <p class="text-light">At our software house, we specialize in crafting stunning and user-friendly frontend web experiences that captivate and elevate brands. With years of experience in the industry.<br><br>
+            <div class="small-div imgs img1 box-shadow d-none d-md-block"></div>
+            <div class="large-div imgs img2 overflow-hidden">
+                <div class="bg-overlay d-flex flex-column justify-content-center align-items-center gap-3 text-justify  rounded box-shadow1 p-4">
+                    <h2 class="text-light h4 h-sm-2 texr-wrap py-1">"Crafting Stunning Frontend Experiences"</h2>
+                    <p class="text-light fs-5 overflow-hidden py-2">At our software house, we specialize in crafting stunning and user-friendly frontend web experiences that captivate and elevate brands. With years of experience in the industry.<br><br>
 
                     We pride ourselves on delivering solutions tailored to whether you're looking for a sleek business website, an engaging e-commerce platform, or a dynamic user interface.
                     
                     Frontend development isn’t just about aesthetics; it’s about creating seamless.</p>
-                    <a href="/contact.html" class="text-decoration-none text-info border border-1 border-info py-1 px-3 rounded1">More info</a>
+                    <a href="/contact.html" class="text-decoration-none text-info border border-1 border-info rounded1">More info</a>
                 </div>
             </div>
-            <div class="small-div imgs img3 box-shadow"></div>            
+            <div class="small-div imgs img3 box-shadow d-none d-md-block"></div>            
           </div>
         </div>
 
         <div class="carousel-item">
           <div class="carousel-container h-500">
-            <div class="small-div imgs img2 box-shadow"></div>
+            <div class="small-div imgs img2 box-shadow d-none d-md-block"></div>
             <div class="large-div imgs img3">
-                <div class="bg-overlay d-flex flex-column justify-content-center align-items-center gap-3 text-justify p-5 rounded box-shadow1">
-                    <h2 class="text-light">"Building Reliable Backend Solutions"</h2>
-                    <p class="text-light">Our software house excels in building reliable and efficient backend solutions that power your digital platforms seamlessly. With expertise in server-side technologies, databases, and API integrations, we ensure your applications run smoothly and securely.<br><br> Our team focuses on creating robust, scalable systems tailored to meet your unique requirements.  
+                <div class="bg-overlay d-flex flex-column justify-content-center align-items-center gap-3 text-justify p-4 rounded box-shadow1">
+                    <h2 class="text-light h4 h-sm-2 texr-wrap py-1">"Building Reliable Backend Solutions"</h2>
+                    <p class="text-light fs-5 overflow-hidden py-2">Our software house excels in building reliable and efficient backend solutions that power your digital platforms seamlessly. With expertise in server-side technologies, databases, and API integrations, we ensure your applications run smoothly and securely.<br><br> Our team focuses on creating robust, scalable systems tailored to meet your unique requirements.  
 
                         We believe a strong backend is the foundation of any successful digital solution, enabling flawless functionality and a superior user experience.</p>
                     <a href="/contact.html" class="text-decoration-none text-info border border-1 border-info py-1 px-3 rounded1">More info</a>
                 </div>
             </div>
-            <div class="small-div imgs img4 box-shadow"></div>            
+            <div class="small-div imgs img4 box-shadow d-none d-md-block"></div>            
           </div>
         </div>
         <div class="carousel-item">
           <div class="carousel-container h-500">
-            <div class="small-div imgs img3 box-shadow"></div>
-            <div class="large-div imgs img4">
-                <div class="bg-overlay d-flex flex-column justify-content-center align-items-center gap-3 text-justify p-5 rounded box-shadow1">
-                    <h2 class="text-light">"Creating Exceptional Web Designs"</h2>
-                    <p class="text-light">Our team specializes in creating exceptional web designs that leave a lasting impression. We focus on blending aesthetics with functionality, ensuring every design is visually stunning and user-friendly.<br><br>From sleek layouts to responsive interfaces, our designs are tailored to meet your brand’s identity and goals. Let us transform your ideas into captivating digital experiences that engage your audience and elevate your online presence.</p>
+            <div class="small-div imgs img3 box-shadow d-none d-md-block"></div>
+            <div class="large-div imgs img4 overflow-hidden">
+                <div class="bg-overlay d-flex flex-column justify-content-center align-items-center gap-3 text-justify p-4 rounded box-shadow1">
+                    <h2 class="text-light h4 h-sm-2 texr-wrap py-1">"Creating Exceptional Web Designs"</h2>
+                    <p class="text-light fs-5 overflow-hidden py-2">Our team specializes in creating exceptional web designs that leave a lasting impression. We focus on blending aesthetics with functionality, ensuring every design is visually stunning and user-friendly.<br><br>From sleek layouts to responsive interfaces, our designs are tailored to meet your brand’s identity and goals. Let us transform your ideas into captivating digital experiences that engage your audience and elevate your online presence.</p>
                     <a href="/contact.html" class="text-decoration-none text-info border border-1 border-info py-1 px-3 rounded1">More info</a>
                 </div>
             </div>
-            <div class="small-div imgs img5 box-shadow"></div>            
+            <div class="small-div imgs img5 box-shadow d-none d-md-block"></div>            
           </div>
         </div>
         <div class="carousel-item">
           <div class="carousel-container h-500">
-            <div class="small-div imgs img4 box-shadow"></div>
-            <div class="large-div imgs img5">
-                <div class="bg-overlay d-flex flex-column justify-content-center align-items-center gap-3 text-justify p-5 rounded box-shadow1">
-                    <h2 class="text-light">"Empowering Your Online Storefront"</h2>
-                    <p class="text-light">We specialize in crafting e-commerce solutions that drive sales and enhance customer experience. From intuitive navigation to secure payment integrations, our designs ensure your online store is both functional and visually appealing.<br><br>Our team focuses on creating responsive, scalable platforms tailored to your business needs. Whether you’re starting fresh or revamping an existing store, we’re here to help you achieve success in the competitive world of e-commerce.
+            <div class="small-div imgs img4 box-shadow d-none d-md-block"></div>
+            <div class="large-div imgs img5 overflow-hidden">
+                <div class="bg-overlay d-flex flex-column justify-content-center align-items-center gap-3 text-justify p-4 rounded box-shadow1">
+                    <h2 class="text-light h4 h-sm-2 texr-wrap py-1">"Empowering Your Online Storefront"</h2>
+                    <p class="text-light fs-5 overflow-hidden py-2">We specialize in crafting e-commerce solutions that drive sales and enhance customer experience. From intuitive navigation to secure payment integrations, our designs ensure your online store is both functional and visually appealing.<br><br>Our team focuses on creating responsive, scalable platforms tailored to your business needs. Whether you’re starting fresh or revamping an existing store, we’re here to help you achieve success in the competitive world of e-commerce.
 
                     </p>
                     <a href="/contact.html" class="text-decoration-none text-info border border-1 border-info py-1 px-3 rounded1">More info</a>
                 </div>
             </div>
-            <div class="small-div imgs img6 box-shadow"></div>            
+            <div class="small-div imgs img6 box-shadow d-none d-md-block"></div>            
           </div>
         </div>
         <div class="carousel-item">
           <div class="carousel-container h-500">
-            <div class="small-div imgs img5 box-shadow"></div>
-            <div class="large-div imgs img6">
-                <div class="bg-overlay d-flex flex-column justify-content-center align-items-center gap-3 text-justify p-5 rounded box-shadow1">
-                    <h2 class="text-light">"Building Dynamic Web Applications"</h2>
-                    <p class="text-light">We excel in developing dynamic web applications that combine performance, scalability, and user-centric design. Our expert team leverages cutting-edge technologies to create custom solutions tailored to your business needs. Whether it's an interactive platform.<br><br> A management tool, or a feature-rich application, we ensure seamless functionality and a superior user experience. Partner with us to transform your ideas into powerful web applications that drive efficiency and deliver outstanding results.</p>
+            <div class="small-div imgs img5 box-shadow d-none d-md-block"></div>
+            <div class="large-div imgs img6 overflow-hidden">
+                <div class="bg-overlay d-flex flex-column justify-content-center align-items-center gap-3 text-justify p-4 rounded box-shadow1">
+                    <h2 class="text-light h4 h-sm-2 texr-wrap py-1">"Building Dynamic Web Applications"</h2>
+                    <p class="text-light fs-5 overflow-hidden py-2">We excel in developing dynamic web applications that combine performance, scalability, and user-centric design. Our expert team leverages cutting-edge technologies to create custom solutions tailored to your business needs. Whether it's an interactive platform.<br><br> A management tool, or a feature-rich application, we ensure seamless functionality and a superior user experience. Partner with us to transform your ideas into powerful web applications that drive efficiency and deliver outstanding results.</p>
                     <a href="/contact.html" class="text-decoration-none text-info border border-1 border-info py-1 px-3 rounded1">More info</a>
                 </div>
             </div>
-            <div class="small-div imgs img1 box-shadow"></div>            
+            <div class="small-div imgs img1 box-shadow d-none d-md-block"></div>            
           </div>
         </div>
 
@@ -299,40 +305,50 @@
 
 
 
-                                                <!-- Second Section Work starts from here  -->
+                                     <!-- Second Section Work starts from here  -->
 
 
-    <div class="d-flex w-100 flex-wrap h-500 bg-info">
-        <div class="d-flex w-50 overflow-hidden h-100">
-            <img src="https://www.wipro.com/content/dam/nexus/en/ai/ai-tile-image-wega.jpg" alt="image" style="height: 100%; width: 100%;">
-        </div>
-        <div class="d-flex px-5 pt-5 pb-3 ps-5 lh-8 h6 w-50 h-100">
-            <h2 class="border border-2 border-dark p-5 me-5 bg-light rounded box-shadow1 hover-box">Turning<br>Your Desires<br>into Reality with our<br>Expert and Trained Team<BR><BR><p class="fs-5 text-justify">"We bring your visions to life by turning your desires and requirements into reality. Our dedicated team listens closely to your needs, crafting tailored solutions that reflect your goals. From innovative, impactful, and successful digital experiences."</p></h2>
+    <div class="d-flex flex-column flex-md-row justify-content align-items-center w-100 h-md-500 h-600 bg-info">
+    <div class="h-100 w-100 w-md-50">
+        <img src="https://www.wipro.com/content/dam/nexus/en/ai/ai-tile-image-wega.jpg" alt="image" style="height: 100%; width: 100%;">
+    </div>
+    <div class="d-flex justify-content-center align-items-center h-100 w-100 w-md-50">
+        <div class="border border-2 border-dark bg-light rounded box-shadow1 hover-box p-3 m-md-5">
+            <h2>Turning<br>Your Desires<br>into Reality with our<br>Expert and Trained Team<BR><BR>
+            <p class="fs-5 text-justify">"We bring your visions to life by turning your desires and requirements into reality. Our dedicated team listens closely to your needs, crafting tailored solutions that reflect your goals. From innovative, impactful, and successful digital experiences."</p></h2>
         </div>
     </div>
-    <div class="d-flex w-100 flex-column flex-wrap h-500 bg-info">
-        <div class="d-flex px-5 pt-5 pb-3 ps-5 lh-8 h6 w-50 h-100">
-            <h2 class="border border-2 border-dark p-5 me-2 bg-light rounded box-shadow1 hover-box">Growing Your<br> Business with SEO<br>and Stunning Designs<br><br>
-            <p class="fs-5 text-justify">"Boost your business growth with our expert SEO strategies and captivating designs, crafted to attract, engage, and convert your audience. Boost your business growth with our expert SEO strategies and captivating designs, crafted to attract, engage, and convert your audience."</p></h2>
-        </div>
-        <div class="d-flex w-50 overflow-hidden h-100">
-            <img src="https://www.wipro.com/content/dam/nexus/en/ai/ai-lady-new-image.jpg" alt="image" style="height: 100%; width: 100%;">
-        </div>
-    </div>
-    <div class="d-flex w-100 flex-wrap h-500 bg-info">
-        <div class="d-flex w-50 h-100">
-            <img src="https://www.wipro.com/content/dam/nexus/en/ai/images/inspeactai-tile-3.jpg" alt="image" style="height: 100%; width: 100%;">
-        </div>
-        <div class="d-flex px-5 pt-5 pb-3 ps-5 lh-8 h6 w-50 h-100">
-            <h2 class="border border-2 border-dark p-5 me-5 bg-light rounded box-shadow1 hover-box">Fast and,<br>Reliable Solutions,<br>Designed Just for Your Needs<br><br><p class="fs-5 text-justify">"Our experienced team is driven by an unmatched passion for excellence. With a deep commitment to delivering outstanding results, we bring creativity, expertise, and dedication to every project. Our high junoon for work ensures innovative solutions, attention to detail, and a relentless focus on exceeding client expectations every step of the way."</p></h2>
-        </div>
-    </div>
-      
+</div>
 
-                                                        <!-- Image section  -->
+<div class="d-flex flex-column-reverse flex-md-row justify-content align-items-center w-100 h-md-500 h-600 bg-info">
+    <div class="d-flex justify-content-center align-items-center h-100 w-100 w-md-50">
+        <div class="border border-2 border-dark bg-light rounded box-shadow1 hover-box p-3 m-md-5">
+            <h2>Growing Your<br> Business with SEO<br>and Stunning Designs<br><br>
+            <p class="fs-5 text-justify">"Boost your business growth with our expert SEO strategies and captivating designs, crafted to attract, engage, and convert your audience."</p></h2>
+        </div>
+    </div>
+    <div class="h-100 w-100 w-md-50">
+        <img src="https://www.wipro.com/content/dam/nexus/en/ai/ai-lady-new-image.jpg" alt="image" style="height: 100%; width: 100%;">
+    </div>
+</div>
+
+<div class="d-flex flex-column flex-md-row justify-content align-items-center w-100 h-md-500 h-600 bg-info">
+    <div class="h-100 w-100 w-md-50">
+        <img src="https://www.wipro.com/content/dam/nexus/en/ai/images/inspeactai-tile-3.jpg" alt="image" style="height: 100%; width: 100%;">
+    </div>
+    <div class="d-flex justify-content-center align-items-center h-100 w-100 w-md-50">
+        <div class="border border-2 border-dark bg-light rounded box-shadow1 hover-box p-3 m-md-5">
+            <h2>Fast and,<br>Reliable Solutions,<br>Designed Just for Your Needs<br><br>
+            <p class="fs-5 text-justify">"Our experienced team is driven by an unmatched passion for excellence. With a deep commitment to delivering outstanding results, we bring creativity, expertise, and dedication to every project."</p></h2>
+        </div>
+    </div>
+</div>
+ 
+
+                                                         <!-- Image section  /////  -->
 
 <div class=" d-flex flex-column justify-content-center align-items-center h-600 w-100 my-5 gap-3">
-    <div class="d-flex justify-content-center align-items-center flex-column w-80 text-justify">
+    <div class="d-flex justify-content-center align-items-center flex-column container w-md-80 text-justify">
         <h2 class="w-80 text-center">"Driving Innovative Marketing Solutions for You"</h2>
         <p class="w-80">"Our software house excels in delivering cutting-edge marketing solut elevate your brand and measurable results. We combine innovation with expertise to drive engagement and growth. Trust us to transform your vision into success, ensuring your business stands out in today's competitive digital landscape."</p>
     </div>
@@ -343,13 +359,13 @@
 
     
 
-                                                <!-- Fixed background image section  -->
+                                                <!-- Fixed background image section  ///// -->
 
 <div class="h-500 w-100 imgs bg-img">
-    <div class="bg-overlay2">
-        <div class="d-flex flex-column justify-content-center align-items-center p-5 w-50 h-100 lh-5 gap-3">
+    <div class="bg-overlay2 overflow-hidden">
+        <div class="d-flex flex-column justify-content-center align-items-center p-5 gap-2">
             <h2 class="text-light">"Excellence Through Efficiency"</h2>
-            <p class="text-light text-align">"Our software house is built on a foundation of efficiency and excellence. We deliver high-quality work with precision, ensuring every project is completed on time and beyond expectations. By leveraging advanced tools and streamlined processes, we maximize productivity, minimize delays, and provide exceptional results that drive your business forward with confidence. Our software house is built on a foundation of efficiency and excellence. We deliver high-quality work with precision, ensuring every project is completed on time and beyond expectations. By leveraging advanced tools and streamlined processes, we maximize productivity, minimize delays, and provide exceptional results that drive your business forward with confidence."</p>
+            <p class="text-light text-justify">"Our software house is built on a foundation of efficiency and excellence. We deliver high-quality work with precision, ensuring every project is completed on time and beyond expectations. By leveraging advanced tools and streamlined processes, we maximize productivity, minimize delays, and provide exceptional results that drive your business forward with confidence.<p class="d-none d-md-block text-light text-justify"> Our software house is built on a foundation of efficiency and excellence. We deliver high-quality work with precision, ensuring every project is completed on time and beyond expectations. By leveraging advanced tools and streamlined processes, we maximize productivity, minimize delays, and provide exceptional results that drive your business forward with confidence."</p></p>
             <a href="/contact.html" class="text-decoration-none text-info border border-1 border-info py-1 px-3 rounded1">Contact Us</a>
         </div>
     </div>
@@ -357,10 +373,10 @@
 </div>
 
 
-                                                <!-- Last section to add contact shortcut  -->
+                                                <!-- Last section to add contact shortcut  //// -->
 
-<div class="container h-600 d-flex justify-content-evenly align-items-center bg-light hover-box box-shadow1 rounded border border-2 border-dark my-5">
-    <div class="d-flex w-40 h-500 bg-primary text-light rounded1 box-shadow1">
+<div class="container h-md-600 h-100 d-flex justify-content-evenly align-items-center flex-column flex-md-row bg-light hover-box box-shadow1 rounded border border-2 border-dark my-5">
+    <div class="d-flex w-md-40 w-100 h-500 bg-primary text-light rounded1 box-shadow1 m-5">
         <form action="submit" class="w-100 h-100 d-flex flex-column justify-content-center ps-5 gap-2">
             <h2 class="h6 fs-1">Get in Touch with Us!</h2>
             <label for="text">Your Name</label>
@@ -372,7 +388,7 @@
             <a href="skylinewebstudio@gmail.com" class="text-decoration-none text-light border border-1 border-light mt-2 py-2 px-3 rounded1" style="width: 150px;">SEND MESSAGE</a>
         </form>
     </div>
-    <div class="w-40 h-500 ps-5 pt-4">
+    <div class="w-md-40 w-100 h-500 ps-5 pt-4">
         <form action="info" class="">
             <h2 class="h6 fs-1">Our Bussiness Hours!</h2>
             <ul>
@@ -390,7 +406,6 @@
         </ul>
     </div>
 </div>
-
 <script src="scripts.js" defer></script>
 
                                                 <!-- Footer  -->
